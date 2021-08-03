@@ -9,7 +9,7 @@ import java.text.SimpleDateFormat;
  * Created on 2021-08-03
  */
 public class DateValidatorUsingDateFormat implements DateValidator {
-    private String dateFormat;
+    private final String dateFormat;
 
     public DateValidatorUsingDateFormat(String dateFormat) {
         this.dateFormat = dateFormat;
@@ -17,7 +17,7 @@ public class DateValidatorUsingDateFormat implements DateValidator {
 
     @Override
     public boolean isValid(String dateStr) {
-        DateFormat sdf = new SimpleDateFormat(this.dateFormat);
+        final DateFormat sdf = new SimpleDateFormat(this.dateFormat);
         sdf.setLenient(false);
         try {
             sdf.parse(dateStr);

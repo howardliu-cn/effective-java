@@ -1,7 +1,5 @@
 package cn.howardliu.tutorials.date.validator;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -13,7 +11,7 @@ class DateValidatorUsingDateFormatTest {
 
     @Test
     void isValid() {
-       final DateValidator validator = new DateValidatorUsingDateFormat("yyyy-MM-dd");
+        final DateValidator validator = new DateValidatorUsingDateFormat("yyyy-MM-dd");
 
         Assertions.assertTrue(validator.isValid("2021-02-28"));
         Assertions.assertFalse(validator.isValid("2021-02-30"));
