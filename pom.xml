@@ -9,6 +9,7 @@
     <version>1.0.0</version>
     <modules>
         <module>core-java8-datetime</module>
+        <module>run-easyexcel</module>
     </modules>
 
     <packaging>pom</packaging>
