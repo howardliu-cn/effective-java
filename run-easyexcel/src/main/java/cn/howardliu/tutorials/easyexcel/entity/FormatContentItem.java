@@ -2,7 +2,6 @@ package cn.howardliu.tutorials.easyexcel.entity;
 
 import java.util.Date;
 
-import com.alibaba.excel.annotation.ExcelIgnore;
 import com.alibaba.excel.annotation.ExcelProperty;
 import com.alibaba.excel.annotation.format.DateTimeFormat;
 import com.alibaba.excel.annotation.format.NumberFormat;
@@ -24,6 +23,4 @@ public class FormatContentItem {
     @NumberFormat("0.000%")
     @ExcelProperty("数字标题")
     private Double doubleData;
-    @ExcelIgnore
-    private String ignore;
 }
