@@ -9,7 +9,7 @@ import java.util.List;
 import com.alibaba.excel.EasyExcelFactory;
 import com.alibaba.excel.metadata.AbstractParameterBuilder;
 
-import cn.howardliu.tutorials.easyexcel.entity.FormatContentItem;
+import cn.howardliu.tutorials.easyexcel.entity.write.FormatContentItem;
 
 /**
  * @author Howard Liu <howardliu1988@163.com>

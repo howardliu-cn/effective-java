@@ -3,9 +3,9 @@ package cn.howardliu.tutorials.easyexcel.write;
 import com.alibaba.excel.EasyExcelFactory;
 import com.alibaba.excel.annotation.ExcelProperty;
 
-import cn.howardliu.tutorials.easyexcel.entity.ComplexHeadItem;
-import cn.howardliu.tutorials.easyexcel.entity.EmptyItem;
-import cn.howardliu.tutorials.easyexcel.entity.IndexItem;
+import cn.howardliu.tutorials.easyexcel.entity.write.ComplexHeadItem;
+import cn.howardliu.tutorials.easyexcel.entity.write.EmptyItem;
+import cn.howardliu.tutorials.easyexcel.entity.write.IndexItem;
 
 /**
  * <ol>

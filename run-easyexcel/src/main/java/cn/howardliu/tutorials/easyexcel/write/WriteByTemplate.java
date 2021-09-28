@@ -5,7 +5,7 @@ import java.io.File;
 import com.alibaba.excel.EasyExcelFactory;
 import com.alibaba.excel.write.builder.ExcelWriterBuilder;
 
-import cn.howardliu.tutorials.easyexcel.entity.Item;
+import cn.howardliu.tutorials.easyexcel.entity.write.Item;
 
 /**
  * @author Howard Liu <howardliu1988@163.com>
@@ -31,7 +31,7 @@ public class WriteByTemplate extends BaseWrite {
      */
     private static void writeByTemplate() {
         String fileName = defaultFileName("writeByTemplate");
-        String templateFile = getPath() + File.separator + "write_by_template.xlsx";
+        String templateFile = getPath() + File.separator + "template_write_after_fill.xlsx";
         EasyExcelFactory.write(fileName)
                 .withTemplate(templateFile)
                 .head(Item.class)

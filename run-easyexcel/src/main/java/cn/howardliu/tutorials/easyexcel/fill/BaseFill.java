@@ -1,20 +1,20 @@
-package cn.howardliu.tutorials.easyexcel.write;
+package cn.howardliu.tutorials.easyexcel.fill;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
 import org.apache.commons.lang3.StringUtils;
 
-import cn.howardliu.tutorials.easyexcel.entity.write.Item;
+import cn.howardliu.tutorials.easyexcel.entity.fill.Item;
+import cn.howardliu.tutorials.easyexcel.write.BaseWrite;
 
 /**
  * @author Howard Liu <howardliu1988@163.com>
- * Created on 2021-09-26
+ * Created on 2021-09-28
  */
-public abstract class BaseWrite {
-    public static final String NAME_TEMPLATE = getPath() + "write-%s-%s.xlsx";
+public abstract class BaseFill {
+    public static final String NAME_TEMPLATE = getPath() + "fill-%s-%s.xlsx";
 
     public static String getPath() {
         return Objects.requireNonNull(BaseWrite.class.getResource("/")).getPath();
@@ -28,10 +28,8 @@ public abstract class BaseWrite {
         List<Item> list = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             Item data = new Item();
-            data.setString("字符串" + i);
-            data.setDate(new Date());
-            data.setDoubleData(i * 0.1);
-            data.setIgnore("这是一个忽略导出的字段" + i);
+            data.setName("刘" + i);
+            data.setNumber(i);
             list.add(data);
         }
         return list;

@@ -3,8 +3,8 @@ package cn.howardliu.tutorials.easyexcel.write;
 import com.alibaba.excel.EasyExcelFactory;
 import com.alibaba.excel.write.merge.LoopMergeStrategy;
 
-import cn.howardliu.tutorials.easyexcel.entity.Item;
-import cn.howardliu.tutorials.easyexcel.entity.MergeCellItem;
+import cn.howardliu.tutorials.easyexcel.entity.write.Item;
+import cn.howardliu.tutorials.easyexcel.entity.write.MergeCellItem;
 
 /**
  * @author Howard Liu <howardliu1988@163.com>

@@ -4,7 +4,7 @@ import com.alibaba.excel.EasyExcelFactory;
 import com.alibaba.excel.ExcelWriter;
 import com.alibaba.excel.write.builder.ExcelWriterSheetBuilder;
 
-import cn.howardliu.tutorials.easyexcel.entity.Item;
+import cn.howardliu.tutorials.easyexcel.entity.write.Item;
 
 /**
  * 简单的写文件

@@ -5,8 +5,8 @@ import com.alibaba.excel.ExcelWriter;
 import com.alibaba.excel.write.metadata.WriteSheet;
 import com.alibaba.excel.write.metadata.WriteTable;
 
-import cn.howardliu.tutorials.easyexcel.entity.ComplexHeadItem;
-import cn.howardliu.tutorials.easyexcel.entity.Item;
+import cn.howardliu.tutorials.easyexcel.entity.write.ComplexHeadItem;
+import cn.howardliu.tutorials.easyexcel.entity.write.Item;
 
 /**
  * 从这里可以看到，表头的作用域分为：工作簿（excel域）、表单（sheet域）、表格（table域），是继承关系。

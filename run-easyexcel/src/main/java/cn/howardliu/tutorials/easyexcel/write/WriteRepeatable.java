@@ -4,8 +4,8 @@ import com.alibaba.excel.EasyExcelFactory;
 import com.alibaba.excel.ExcelWriter;
 import com.alibaba.excel.write.metadata.WriteSheet;
 
-import cn.howardliu.tutorials.easyexcel.entity.ComplexHeadItem;
-import cn.howardliu.tutorials.easyexcel.entity.Item;
+import cn.howardliu.tutorials.easyexcel.entity.write.ComplexHeadItem;
+import cn.howardliu.tutorials.easyexcel.entity.write.Item;
 
 /**
  * 多次写入

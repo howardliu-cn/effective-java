@@ -17,7 +17,7 @@ import com.alibaba.excel.metadata.data.WriteCellData;
 import com.alibaba.excel.write.metadata.style.WriteCellStyle;
 import com.alibaba.excel.write.metadata.style.WriteFont;
 
-import cn.howardliu.tutorials.easyexcel.entity.ComplexFormatCellItem;
+import cn.howardliu.tutorials.easyexcel.entity.write.ComplexFormatCellItem;
 
 /**
  * @author Howard Liu <howardliu1988@163.com>

@@ -1,4 +1,4 @@
-package cn.howardliu.tutorials.easyexcel.entity;
+package cn.howardliu.tutorials.easyexcel.entity.write;
 
 import java.util.Date;
 

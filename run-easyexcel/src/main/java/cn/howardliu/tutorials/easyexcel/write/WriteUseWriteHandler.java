@@ -16,7 +16,7 @@ import com.alibaba.excel.write.metadata.style.WriteFont;
 import com.alibaba.excel.write.style.HorizontalCellStyleStrategy;
 import com.alibaba.excel.write.style.column.LongestMatchColumnWidthStyleStrategy;
 
-import cn.howardliu.tutorials.easyexcel.entity.Item;
+import cn.howardliu.tutorials.easyexcel.entity.write.Item;
 import cn.howardliu.tutorials.easyexcel.write.handler.CellStyleWriteHandler;
 import cn.howardliu.tutorials.easyexcel.write.handler.ColumnValidationWriteHandler;
 import cn.howardliu.tutorials.easyexcel.write.handler.CommentWriteHandler;

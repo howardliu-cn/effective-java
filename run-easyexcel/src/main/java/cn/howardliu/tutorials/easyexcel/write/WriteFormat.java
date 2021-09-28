@@ -2,9 +2,9 @@ package cn.howardliu.tutorials.easyexcel.write;
 
 import com.alibaba.excel.EasyExcelFactory;
 
-import cn.howardliu.tutorials.easyexcel.entity.FormatCellItem;
-import cn.howardliu.tutorials.easyexcel.entity.FormatContentItem;
-import cn.howardliu.tutorials.easyexcel.entity.FormatStyleCellItem;
+import cn.howardliu.tutorials.easyexcel.entity.write.FormatCellItem;
+import cn.howardliu.tutorials.easyexcel.entity.write.FormatContentItem;
+import cn.howardliu.tutorials.easyexcel.entity.write.FormatStyleCellItem;
 
 /**
  * 数据格式化：

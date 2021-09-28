@@ -5,7 +5,7 @@ import java.util.Set;
 
 import com.alibaba.excel.EasyExcelFactory;
 
-import cn.howardliu.tutorials.easyexcel.entity.Item;
+import cn.howardliu.tutorials.easyexcel.entity.write.Item;
 
 /**
  * 指定包含或忽略的字段
