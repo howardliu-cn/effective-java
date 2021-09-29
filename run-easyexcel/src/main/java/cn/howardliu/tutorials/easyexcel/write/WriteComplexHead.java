@@ -29,7 +29,7 @@ public class WriteComplexHead extends BaseWrite {
     /**
      * 没有使用{@link ExcelProperty}注解的表头。
      */
-    public static void writeNoAnnotation() {
+    private static void writeNoAnnotation() {
         final String fileName = defaultFileName("writeNoAnnotation");
         EasyExcelFactory.write(fileName)
                 .head(EmptyItem.class)
@@ -40,7 +40,7 @@ public class WriteComplexHead extends BaseWrite {
     /**
      * 使用{@link ExcelProperty}注解表头，定义index字段值指定列位置
      */
-    public static void writeWithIndex() {
+    private static void writeWithIndex() {
         final String fileName = defaultFileName("writeWithIndex");
         EasyExcelFactory.write(fileName)
                 .head(IndexItem.class)
@@ -51,7 +51,7 @@ public class WriteComplexHead extends BaseWrite {
     /**
      * 使用{@link ExcelProperty}注解定义多表头和合并表头
      */
-    public static void writeWithMultiHead() {
+    private static void writeWithMultiHead() {
         final String fileName = defaultFileName("writeWithMultiHead");
         EasyExcelFactory.write(fileName)
                 .head(ComplexHeadItem.class)

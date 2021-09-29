@@ -2,7 +2,7 @@ package cn.howardliu.tutorials.easyexcel.write;
 
 import com.alibaba.excel.EasyExcelFactory;
 import com.alibaba.excel.ExcelWriter;
-import com.alibaba.excel.write.builder.ExcelWriterSheetBuilder;
+import com.alibaba.excel.write.metadata.WriteSheet;
 
 import cn.howardliu.tutorials.easyexcel.entity.write.Item;
 
@@ -19,7 +19,7 @@ public class WriteSample extends BaseWrite {
     }
 
     /**
-     * 借助{@link ExcelWriterSheetBuilder}自动创建{@link ExcelWriter}写入数据。
+     * 借助{@link com.alibaba.excel.write.builder.ExcelWriterSheetBuilder}自动创建{@link com.alibaba.excel.ExcelWriter}写入数据。
      * <p>
      * 提供列表和函数作为数据源
      */
@@ -32,7 +32,7 @@ public class WriteSample extends BaseWrite {
     }
 
     /**
-     * 手动创建{@link ExcelWriter}，指定sheet写入数据。
+     * 手动创建{@link com.alibaba.excel.ExcelWriter}，指定sheet写入数据。
      * <p>
      * 提供列表和函数作为数据源
      */
@@ -43,8 +43,11 @@ public class WriteSample extends BaseWrite {
             excelWriter = EasyExcelFactory.write(fileName)
                     .head(Item.class)
                     .build();
-            excelWriter.write(sampleItems(), EasyExcelFactory.writerSheet("模板1").build());
-            excelWriter.write(sampleItems(), EasyExcelFactory.writerSheet("模板2").build());
+            final WriteSheet writeSheet1 = EasyExcelFactory.writerSheet("模板1").build();
+            excelWriter.write(WriteSample::sampleItems, writeSheet1);
+
+            final WriteSheet writeSheet2 = EasyExcelFactory.writerSheet("模板2").build();
+            excelWriter.write(sampleItems(), writeSheet2);
         } finally {
             // 千万别忘记finish 会帮忙关闭流
             if (excelWriter != null) {

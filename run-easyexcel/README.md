@@ -8,7 +8,7 @@
 
 ## 示例
 
-- 写操作
+- 写Excel
     - [WriteSample](./src/main/java/cn/howardliu/tutorials/easyexcel/write/WriteSample.java)
       - writeAutoWriter：根据头对象和列表向一个工作表中写一个表格
       - writeManualWither：根据头对象和列表向多个工作表中分别写一个表格
@@ -49,7 +49,7 @@
       - writeDynamicHead：动态表头，可以实现多个表头
       - writeDynamicMultiHead：注解表头+动态表头，以动态表头为准。可以在注解表头类中实现格式定义，然后通过动态表头实现国际化。
       - writeDynamicData：动态表体
-- 填充
+- 填充Excel
     - [FillSample](./src/main/java/cn/howardliu/tutorials/easyexcel/fill/FillSample.java)
       - fillUseObject：填充对象
       - fillUseMap：填充map结构对象
