@@ -52,7 +52,7 @@ public class WriteDynamicData extends BaseWrite {
     }
 
     /**
-     * 动态列表
+     * 动态表体
      */
     private static void writeDynamicData() {
         String fileName = defaultFileName("writeDynamicData");
