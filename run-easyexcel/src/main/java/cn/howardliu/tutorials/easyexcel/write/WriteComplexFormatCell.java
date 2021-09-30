@@ -40,7 +40,7 @@ public class WriteComplexFormatCell extends BaseWrite {
         HyperlinkData hyperlinkData = new HyperlinkData();
         hyperlinkData.setAddress("https://www.howardliu.cn");
         hyperlinkData.setHyperlinkType(HyperlinkType.URL);
-        WriteCellData<String> hyperlink = new WriteCellData<>("官方网站");
+        WriteCellData<String> hyperlink = new WriteCellData<>("网站");
         hyperlink.setHyperlinkData(hyperlinkData);
         writeCellDemoData.setHyperlink(hyperlink);
 
@@ -96,8 +96,7 @@ public class WriteComplexFormatCell extends BaseWrite {
         EasyExcelFactory.write(fileName)
                 .head(ComplexFormatCellItem.class)
                 .inMemory(true)
-                .sheet("模板")
+                .sheet()
                 .doWrite(data);
-
     }
 }
