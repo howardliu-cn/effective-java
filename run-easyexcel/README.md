@@ -6,6 +6,9 @@
 2. 工作表：excel中的一个sheet对象
 3. 表格：sheet中的一个table对象
 
+- [写文件](https://www.howardliu.cn/effective-java-easyexcel-action-write/)
+- [定制格式写文件](https://www.howardliu.cn/effective-java-easyexcel-action-write-pretty/)
+
 ## 示例
 
 - 写Excel
