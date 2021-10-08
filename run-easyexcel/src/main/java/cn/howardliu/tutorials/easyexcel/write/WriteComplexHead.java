@@ -5,6 +5,7 @@ import com.alibaba.excel.annotation.ExcelProperty;
 
 import cn.howardliu.tutorials.easyexcel.entity.write.ComplexHeadItem;
 import cn.howardliu.tutorials.easyexcel.entity.write.EmptyItem;
+import cn.howardliu.tutorials.easyexcel.entity.write.HeadAndContentFieldDislocationItem;
 import cn.howardliu.tutorials.easyexcel.entity.write.IndexItem;
 
 /**
@@ -22,6 +23,7 @@ import cn.howardliu.tutorials.easyexcel.entity.write.IndexItem;
 public class WriteComplexHead extends BaseWrite {
     public static void main(String[] args) {
         writeNoAnnotation();
+        writeHeadAndContentFieldDislocation();
         writeWithIndex();
         writeWithMultiHead();
     }
@@ -33,6 +35,21 @@ public class WriteComplexHead extends BaseWrite {
         final String fileName = defaultFileName("writeNoAnnotation");
         EasyExcelFactory.write(fileName)
                 .head(EmptyItem.class)
+                .sheet("模板")
+                .doWrite(WriteSample::sampleItems);
+    }
+
+    /**
+     * <ul>
+     *     <li>如果表头字段少于表体类的字段，会出现一列没有表头的数据</li>
+     *     <li>如果是中间字段缺失，且没有定义index，将出现字段对应错位</li>
+     *     <li>如果表头表体字段没有定义index，且字段顺序不一致，将出现字段对应错位</li>
+     * </ul>
+     */
+    private static void writeHeadAndContentFieldDislocation() {
+        final String fileName = defaultFileName("writeHeadAndContentFieldDislocation");
+        EasyExcelFactory.write(fileName)
+                .head(HeadAndContentFieldDislocationItem.class)
                 .sheet("模板")
                 .doWrite(WriteSample::sampleItems);
     }
