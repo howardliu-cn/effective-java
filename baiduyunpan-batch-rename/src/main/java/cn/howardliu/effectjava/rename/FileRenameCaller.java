@@ -27,13 +27,15 @@ import cn.hutool.json.JSONUtil;
 public class FileRenameCaller extends BaseCaller {
     private static final String RENAME_BODY_PARAM = "filelist=[{\"path\":\"%s\",\"newname\":\"%s\"}]";
     private final TaskStatusCaller taskStatusCaller;
+    private final String bdstoken;
 
-    public FileRenameCaller(String cookie) {
-        this(cookie, Maps.newHashMap());
+    public FileRenameCaller(String cookie, String bdstoken) {
+        this(cookie, bdstoken, Maps.newHashMap());
     }
 
-    public FileRenameCaller(String cookie, Map<String, List<String>> customHeaders) {
+    public FileRenameCaller(String cookie, String bdstoken, Map<String, List<String>> customHeaders) {
         super(cookie, customHeaders);
+        this.bdstoken = bdstoken;
         taskStatusCaller = new TaskStatusCaller(cookie, customHeaders);
     }
 
@@ -48,9 +50,10 @@ public class FileRenameCaller extends BaseCaller {
 
         final List<FileRenameResultInfo> failInfos = Lists.newArrayList();
         final FileRenameRequest fileRenameRequest = new FileRenameRequest();
+        fileRenameRequest.setBdstoken(this.bdstoken);
         for (FileName fileName : fileNames) {
             final String params = String.format(RENAME_BODY_PARAM, fileName.getPath(), fileName.getNewName());
-            final Long taskId = listFileCurrentPath(fileRenameRequest, params);
+            final Long taskId = rename(fileRenameRequest, params);
             final FileRenameResultInfo fileRenameResultInfo = new FileRenameResultInfo();
             fileRenameResultInfo.setFileName(fileName);
             failInfos.add(fileRenameResultInfo);
@@ -69,7 +72,7 @@ public class FileRenameCaller extends BaseCaller {
         return failInfos;
     }
 
-    private Long listFileCurrentPath(FileRenameRequest fileRenameRequest, String params) {
+    private Long rename(FileRenameRequest fileRenameRequest, String params) {
         final String queryParam = HttpUtil.toParams(fileRenameRequest.paramMap());
         final HttpRequest httpRequest = HttpRequest.post("https://pan.baidu.com/api/filemanager?" + queryParam)
                 .header(this.headers)
