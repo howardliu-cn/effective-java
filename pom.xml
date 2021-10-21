@@ -10,6 +10,7 @@
     <modules>
         <module>core-java8-datetime</module>
         <module>run-easyexcel</module>
+        <module>baiduyunpan-batch-rename</module>
     </modules>
 
     <packaging>pom</packaging>
