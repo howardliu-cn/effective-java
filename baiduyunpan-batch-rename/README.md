@@ -1,5 +1,7 @@
 # 百度云盘
 
+- [从零实现“百度网盘批量重命名”工具](https://www.howardliu.cn/effective-java-tools-batch-rename-baiduwangpan/)
+
 这个模块初衷是为了批量修改百度云盘中文件的名字，拆分了两部分功能：
 
 1. 批量导出指定目录下所有文件的名称
