@@ -18,7 +18,10 @@ class PowerfulComparisonTest {
 
     @Test
     void baseSortedOrigin() {
-        final List<Student> students = students();
+        final List<Student> students = Lists.newArrayList(
+                new Student("Tom", 10),
+                new Student("Jerry", 12)
+        );
         Collections.sort(students, new Comparator<Student>() {
             @Override
             public int compare(Student h1, Student h2) {
@@ -30,7 +33,10 @@ class PowerfulComparisonTest {
 
     @Test
     void baseSortedLambda() {
-        final List<Student> students = students();
+        final List<Student> students = Lists.newArrayList(
+                new Student("Tom", 10),
+                new Student("Jerry", 12)
+        );
         Collections.sort(students, (Student h1, Student h2) -> h1.getName().compareTo(h2.getName()));
         students.sort((Student h1, Student h2) -> h1.getName().compareTo(h2.getName()));
         Assertions.assertEquals(students.get(0), new Student("Jerry", 12));
@@ -38,7 +44,10 @@ class PowerfulComparisonTest {
 
     @Test
     void baseSortedLambdaWithInferring() {
-        final List<Student> students = students();
+        final List<Student> students = Lists.newArrayList(
+                new Student("Tom", 10),
+                new Student("Jerry", 12)
+        );
         Collections.sort(students, (h1, h2) -> h1.getName().compareTo(h2.getName()));
         students.sort((h1, h2) -> h1.getName().compareTo(h2.getName()));
         Assertions.assertEquals(students.get(0), new Student("Jerry", 12));
@@ -46,22 +55,42 @@ class PowerfulComparisonTest {
 
     @Test
     void sortedUsingStaticMethod() {
-        final List<Student> students = students();
+        final List<Student> students = Lists.newArrayList(
+                new Student("Tom", 10),
+                new Student("Jerry", 12)
+        );
         students.sort(Student::compareByNameThenAge);
         Assertions.assertEquals(students.get(0), new Student("Jerry", 12));
     }
 
     @Test
     void sortedUsingComparator() {
-        final List<Student> students = students();
+        final List<Student> students = Lists.newArrayList(
+                new Student("Tom", 10),
+                new Student("Jerry", 12)
+        );
         Collections.sort(students, Comparator.comparing(Student::getName));
         students.sort(Comparator.comparing(Student::getName));
         Assertions.assertEquals(students.get(0), new Student("Jerry", 12));
     }
 
     @Test
+    void sortedUsingComparatorReverse() {
+        final List<Student> students = Lists.newArrayList(
+                new Student("Tom", 10),
+                new Student("Jerry", 12)
+        );
+        Collections.sort(students, Comparator.comparing(Student::getName));
+        students.sort(Comparator.comparing(Student::getName, Comparator.reverseOrder()));
+        Assertions.assertEquals(students.get(0), new Student("Jerry", 12));
+    }
+
+    @Test
     void sortedReverseUsingComparator() {
-        final List<Student> students = students();
+        final List<Student> students = Lists.newArrayList(
+                new Student("Tom", 10),
+                new Student("Jerry", 12)
+        );
         final Comparator<Student> comparator = (h1, h2) -> h1.getName().compareTo(h2.getName());
         students.sort(comparator.reversed());
         Assertions.assertEquals(students.get(0), new Student("Tom", 10));
@@ -69,7 +98,10 @@ class PowerfulComparisonTest {
 
     @Test
     void sortedReverseUsingComparator2() {
-        final List<Student> students = students();
+        final List<Student> students = Lists.newArrayList(
+                new Student("Tom", 10),
+                new Student("Jerry", 12)
+        );
         final Comparator<Student> comparator = (h1, h2) -> h2.getName().compareTo(h1.getName());
         students.sort(comparator);
         Assertions.assertEquals(students.get(0), new Student("Tom", 10));
@@ -77,7 +109,11 @@ class PowerfulComparisonTest {
 
     @Test
     void sortedMultiCondition() {
-        final List<Student> students = students();
+        final List<Student> students = Lists.newArrayList(
+                new Student("Tom", 10),
+                new Student("Jerry", 12),
+                new Student("Jerry", 13)
+        );
         students.sort((s1, s2) -> {
             if (s1.getName().equals(s2.getName())) {
                 return Integer.compare(s1.getAge(), s2.getAge());
@@ -90,30 +126,47 @@ class PowerfulComparisonTest {
 
     @Test
     void sortedMultiConditionUsingComparator() {
-        final List<Student> students = students();
+        final List<Student> students = Lists.newArrayList(
+                new Student("Tom", 10),
+                new Student("Jerry", 12),
+                new Student("Jerry", 13)
+        );
         students.sort(Comparator.comparing(Student::getName).thenComparing(Student::getAge));
         Assertions.assertEquals(students.get(0), new Student("Jerry", 12));
     }
 
     @Test
     void streamSorted() {
-        final List<Student> students = students();
+        final List<Student> students = Lists.newArrayList(
+                new Student("Tom", 10),
+                new Student("Jerry", 12)
+        );
         final Comparator<Student> comparator = (h1, h2) -> h1.getName().compareTo(h2.getName());
-        final List<Student> sortedStudents = students.stream().sorted(comparator).collect(Collectors.toList());
+        final List<Student> sortedStudents = students.stream()
+                .sorted(comparator)
+                .collect(Collectors.toList());
         Assertions.assertEquals(sortedStudents.get(0), new Student("Jerry", 12));
     }
 
     @Test
     void streamSortedUsingComparator() {
-        final List<Student> students = students();
+        final List<Student> students = Lists.newArrayList(
+                new Student("Tom", 10),
+                new Student("Jerry", 12)
+        );
         final Comparator<Student> comparator = Comparator.comparing(Student::getName);
-        final List<Student> sortedStudents = students.stream().sorted(comparator).collect(Collectors.toList());
+        final List<Student> sortedStudents = students.stream()
+                .sorted(comparator)
+                .collect(Collectors.toList());
         Assertions.assertEquals(sortedStudents.get(0), new Student("Jerry", 12));
     }
 
     @Test
     void streamReverseSorted() {
-        final List<Student> students = students();
+        final List<Student> students = Lists.newArrayList(
+                new Student("Tom", 10),
+                new Student("Jerry", 12)
+        );
         final Comparator<Student> comparator = (h1, h2) -> h2.getName().compareTo(h1.getName());
         final List<Student> sortedStudents = students.stream()
                 .sorted(comparator)
@@ -123,7 +176,10 @@ class PowerfulComparisonTest {
 
     @Test
     void streamReverseSortedUsingComparator() {
-        final List<Student> students = students();
+        final List<Student> students = Lists.newArrayList(
+                new Student("Tom", 10),
+                new Student("Jerry", 12)
+        );
         final List<Student> sortedStudents = students.stream()
                 .sorted(Comparator.comparing(Student::getName, Comparator.reverseOrder()))
                 .collect(Collectors.toList());
@@ -132,19 +188,26 @@ class PowerfulComparisonTest {
 
     @Test
     void sortedNullGotNPE() {
-        final List<Student> students = studentsWithNull();
+        final List<Student> students = Lists.newArrayList(
+                null,
+                new Student("Snoopy", 12),
+                null
+        );
         Assertions.assertThrows(NullPointerException.class,
                 () -> students.sort(Comparator.comparing(Student::getName)));
     }
 
     @Test
     void sortedNullNoNPE() {
-        final List<Student> students = studentsWithNull();
+        final List<Student> students = Lists.newArrayList(
+                null,
+                new Student("Snoopy", 12),
+                null
+        );
         students.sort((s1, s2) -> {
             if (s1 == null) {
                 return s2 == null ? 0 : 1;
-            }
-            else if (s2 == null) {
+            } else if (s2 == null) {
                 return -1;
             }
             return s1.getName().compareTo(s2.getName());
@@ -157,7 +220,11 @@ class PowerfulComparisonTest {
 
     @Test
     void sortedNullLast() {
-        final List<Student> students = studentsWithNull();
+        final List<Student> students = Lists.newArrayList(
+                null,
+                new Student("Snoopy", 12),
+                null
+        );
         students.sort(Comparator.nullsLast(Comparator.comparing(Student::getName)));
         Assertions.assertNotNull(students.get(0));
         Assertions.assertNull(students.get(1));
@@ -165,27 +232,38 @@ class PowerfulComparisonTest {
     }
 
     @Test
-    void sortedNullFirst() {
-        final List<Student> students = studentsWithNull();
-        students.sort(Comparator.nullsFirst(Comparator.comparing(Student::getName)));
-        Assertions.assertNull(students.get(0));
-        Assertions.assertNull(students.get(1));
-        Assertions.assertNotNull(students.get(2));
-    }
-
-    private List<Student> students() {
-        return Lists.newArrayList(
-                new Student("Tom", 10),
-                new Student("Jerry", 12),
-                new Student("Jerry", 13)
+    void sortedNullFieldLast() {
+        final List<Student> students = Lists.newArrayList(
+                new Student(null, 10),
+                new Student("Snoopy", 12),
+                null
         );
+        final Comparator<Student> nullsLast = Comparator.nullsLast(
+                Comparator.nullsLast(
+                        Comparator.comparing(
+                                Student::getName,
+                                Comparator.nullsLast(
+                                        String::compareTo
+                                )
+                        )
+                )
+        );
+        students.sort(nullsLast);
+        Assertions.assertEquals(students.get(0), new Student("Snoopy", 12));
+        Assertions.assertEquals(students.get(1), new Student(null, 10));
+        Assertions.assertNull(students.get(2));
     }
 
-    private List<Student> studentsWithNull() {
-        return Lists.newArrayList(
+    @Test
+    void sortedNullFirst() {
+        final List<Student> students = Lists.newArrayList(
                 null,
                 new Student("Snoopy", 12),
                 null
         );
+        students.sort(Comparator.nullsFirst(Comparator.comparing(Student::getName)));
+        Assertions.assertNull(students.get(0));
+        Assertions.assertNull(students.get(1));
+        Assertions.assertNotNull(students.get(2));
     }
 }
