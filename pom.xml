@@ -12,6 +12,7 @@
         <module>run-easyexcel</module>
         <module>baiduyunpan-batch-rename</module>
         <module>core-java8-collection</module>
+        <module>design-pattern</module>
     </modules>
 
     <packaging>pom</packaging>
