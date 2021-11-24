@@ -13,6 +13,7 @@
         <module>baiduyunpan-batch-rename</module>
         <module>core-java8-collection</module>
         <module>design-pattern</module>
+        <module>java-features</module>
     </modules>
 
     <packaging>pom</packaging>
