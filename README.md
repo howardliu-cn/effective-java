@@ -15,5 +15,8 @@
   - [定制格式写文件](https://www.howardliu.cn/effective-java-easyexcel-action-write-pretty/)
 - [百度网盘批量重命名工具](./baiduyunpan-batch-rename)
   - [从零实现“百度网盘批量重命名”工具](https://www.howardliu.cn/effective-java-tools-batch-rename-baiduwangpan/)
+- [Java 新特性](./java-features)
+  - [Java8 新特性](https://mp.weixin.qq.com/s/rjMOq0QAdiWNacKYqHJqXA)
+  - [Java9 新特性](https://mp.weixin.qq.com/s/FHv963s0Qvh2K5r2tdLATA)
 
 ![公众号：「看山的小屋」](http://static.howardliu.cn/about/kanshanshuo.png)
