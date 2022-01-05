@@ -34,6 +34,9 @@ class OuterTest {
         assertEquals("cn.howardliu.tutorials.java11.nest.Outer", innerNestHostName);
 
         assertEquals(outerNestHostName, innerNestHostName);
+
+        final String notNestClass = NotNestClass.class.getNestHost().getName();
+        assertEquals("cn.howardliu.tutorials.java11.nest.NotNestClass", notNestClass);
     }
 
     @Test

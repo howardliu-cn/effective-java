@@ -26,6 +26,8 @@ public class Outer {
     public void callInnerMethod() {
         final Inner inner = new Inner();
         inner.print4();
+        inner.print5();
+        System.out.println(inner.j);
     }
 
     public void callInnerReflectionMethod()
@@ -35,16 +37,21 @@ public class Outer {
     }
 
     public class Inner {
+        private int j;
+
         public void print3() {
+            System.out.println(i);
             print1();
         }
 
         public void print4() {
+            System.out.println(i);
             print11();
             print12();
         }
 
         private void print5() {
+            System.out.println(i);
             print11();
             print12();
         }

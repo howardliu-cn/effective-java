@@ -15,7 +15,7 @@ class OuterTest {
         final Outer outer = new Outer();
 
         final Exception e = assertThrows(IllegalAccessException.class, outer::callInnerReflectionMethod);
-        System.out.println(e.getMessage());
+        e.printStackTrace();
 
         assertDoesNotThrow(outer::callInnerMethod);
     }
