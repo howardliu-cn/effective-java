@@ -4,12 +4,12 @@
 # Effective Java
 
 - [Java8中的日期和时间实践](./core-java8-datetime)
-  - [Java8 中的时间类及常用 API](https://www.howardliu.cn/java-date-and-time-intro/)
-  - [Date 与 LocalDate 或 LocalDateTime 互相转换](https://www.howardliu.cn/java-date-to-localdate-and-localdatetime/)
-  - [开始使用 Java8 中的时间类](https://www.howardliu.cn/java-date-time-migrating-to-jsr310/)
-  - [检查时间格式的字符串是否合法](https://www.howardliu.cn/java-string-valid-date/)
+  - [Java8 中的时间类及常用 API](https://mp.weixin.qq.com/s/Srv6733byTYDg7hTrW_tdw)
+  - [Date 与 LocalDate 或 LocalDateTime 互相转换](https://mp.weixin.qq.com/s/LRydpL89GsjOeTrLrihyYQ)
+  - [开始使用 Java8 中的时间类](https://mp.weixin.qq.com/s/KmBMLG1y73IUwFuSfUKaEQ)
+  - [检查时间格式的字符串是否合法](https://mp.weixin.qq.com/s/PxC0WQMReIeG0Tyl5WiK1Q)
 - [Java8中的队列实践](./core-java8-collection)
-  - [Java进阶：使用Lambda表达式实现超强的排序功能](https://www.howardliu.cn/)
+  - [Java进阶：使用Lambda表达式实现超强的排序功能](https://mp.weixin.qq.com/s/Vhw-2lgCvmhNI5aeXOWYNg)
 - [阿里巴巴开源的EasyExcel保姆级教程](./run-easyexcel)
   - [写文件](https://www.howardliu.cn/effective-java-easyexcel-action-write/)
   - [定制格式写文件](https://www.howardliu.cn/effective-java-easyexcel-action-write-pretty/)
@@ -18,5 +18,6 @@
 - [Java 新特性](./java-features)
   - [Java8 新特性](https://mp.weixin.qq.com/s/rjMOq0QAdiWNacKYqHJqXA)
   - [Java9 新特性](https://mp.weixin.qq.com/s/FHv963s0Qvh2K5r2tdLATA)
+  - [Java10 新特性](https://mp.weixin.qq.com/s/NY5-qkfZGdaOvz9iyJ3VSQ)
 
 ![公众号：「看山的小屋」](http://static.howardliu.cn/about/kanshanshuo.png)
