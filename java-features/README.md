@@ -11,7 +11,7 @@
 - [x] [Java9 新特性](https://mp.weixin.qq.com/s/FHv963s0Qvh2K5r2tdLATA)
 - [x] [Java10 新特性](https://mp.weixin.qq.com/s/NY5-qkfZGdaOvz9iyJ3VSQ)
 - [ ] [Java11 新特性](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI4OTU5NTA1Ng==&action=getalbum&album_id=1732392238946533378#wechat_redirect)
-    - [ ] [Java11 中基于嵌套关系的访问控制优化](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI4OTU5NTA1Ng==&action=getalbum&album_id=1732392238946533378#wechat_redirect)
+    - [x] [Java11 中基于嵌套关系的访问控制优化](https://mp.weixin.qq.com/s/baBv0mP2JmPE4MoNYESqhA)
 - [ ] [Java12 新特性](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI4OTU5NTA1Ng==&action=getalbum&album_id=1732392238946533378#wechat_redirect)
 - [ ] [Java13 新特性](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI4OTU5NTA1Ng==&action=getalbum&album_id=1732392238946533378#wechat_redirect)
 - [ ] [Java14 新特性](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI4OTU5NTA1Ng==&action=getalbum&album_id=1732392238946533378#wechat_redirect)
