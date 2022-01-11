@@ -13,7 +13,5 @@ public class NestMain {
 
         final String innerNestHostName = Inner.class.getNestHost().getName();
         System.out.println(innerNestHostName);
-
-
     }
 }
