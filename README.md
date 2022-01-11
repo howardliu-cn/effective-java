@@ -17,7 +17,11 @@
   - [从零实现“百度网盘批量重命名”工具](https://www.howardliu.cn/effective-java-tools-batch-rename-baiduwangpan/)
 - [Java 新特性](./java-features)
   - [Java8 新特性](https://mp.weixin.qq.com/s/rjMOq0QAdiWNacKYqHJqXA)
+    - [一文掌握 Java8 的 Optional 的 6 种操作](https://mp.weixin.qq.com/s/JOLrw7cbVh8z2czePEfLjw)
+    - [使用Lambda表达式实现超强的排序功能](https://mp.weixin.qq.com/s/Vhw-2lgCvmhNI5aeXOWYNg)
   - [Java9 新特性](https://mp.weixin.qq.com/s/FHv963s0Qvh2K5r2tdLATA)
   - [Java10 新特性](https://mp.weixin.qq.com/s/NY5-qkfZGdaOvz9iyJ3VSQ)
+  - [Java11 新特性](https://mp.weixin.qq.com/s/Bn4S2OfMoG19lI-L3nw8cg)
+    - [Java11 中基于嵌套关系的访问控制优化](https://mp.weixin.qq.com/s/baBv0mP2JmPE4MoNYESqhA)
 
 ![公众号：「看山的小屋」](http://static.howardliu.cn/about/kanshanshuo.png)
