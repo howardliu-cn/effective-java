@@ -16,4 +16,12 @@
         <maven.compiler.target>12</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>4.2</version>
+        </dependency>
+    </dependencies>
+
 </project>
