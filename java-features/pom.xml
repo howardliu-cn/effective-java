@@ -17,5 +17,12 @@
         <module>java-10-features</module>
         <module>java-11-features</module>
         <module>java-12-features</module>
+        <module>java-13-features</module>
     </modules>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
 </project>
