@@ -14,6 +14,7 @@
         <module>core-java8-collection</module>
         <module>design-pattern</module>
         <module>java-features</module>
+        <module>juc-tutorials</module>
     </modules>
 
     <packaging>pom</packaging>
