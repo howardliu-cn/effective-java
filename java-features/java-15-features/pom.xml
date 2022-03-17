@@ -3,29 +3,24 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>effective-java</artifactId>
+        <artifactId>java-features</artifactId>
         <groupId>cn.howardliu.tutorials</groupId>
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>java-features</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>java-8-features</module>
-        <module>java-9-features</module>
-        <module>java-10-features</module>
-        <module>java-11-features</module>
-        <module>java-12-features</module>
-        <module>java-13-features</module>
-        <module>java-14-features</module>
-        <module>java-15-features</module>
-        <module>java-16-features</module>
-    </modules>
+    <artifactId>java-15-features</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.14</version>
+        </dependency>
+    </dependencies>
 </project>
