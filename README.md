@@ -23,5 +23,13 @@
   - [Java10 新特性](https://mp.weixin.qq.com/s/NY5-qkfZGdaOvz9iyJ3VSQ)
   - [Java11 新特性](https://mp.weixin.qq.com/s/Bn4S2OfMoG19lI-L3nw8cg)
     - [Java11 中基于嵌套关系的访问控制优化](https://mp.weixin.qq.com/s/baBv0mP2JmPE4MoNYESqhA)
+  - [Java12 的新特性](https://mp.weixin.qq.com/s/xBjXHC5UWy4JEKaRo6xQsg)
+  - [Java13 的新特性](https://mp.weixin.qq.com/s/9EdRVPK0GUoQqI7eXcmwEA)
+  - [Java14 的新特性](https://mp.weixin.qq.com/s/rEAHIf40j_UECLlxK5KW6w)
+  - [Java15 的新特性](https://mp.weixin.qq.com/s/UESHDzuY3H7p5LLPJfwyAw)
+  - [Java16 的新特性](https://mp.weixin.qq.com/s/HExV39BU0lSbdtg0aMjbSA)
+  - [Java17 的新特性](https://mp.weixin.qq.com/s/By2JoZqAHA6U36PG8qvCcg)
+  - [Java18 的新特性](https://mp.weixin.qq.com/s/W6Esovb7zzCL_seXgY84jA)
+  - [Java19 的新特性](https://mp.weixin.qq.com/s/WutbAX_IQNqP4M3rud9f_g)
 
 ![公众号：「看山的小屋」](http://static.howardliu.cn/about/kanshanshuo.png)
