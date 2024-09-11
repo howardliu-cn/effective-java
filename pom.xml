@@ -15,6 +15,8 @@
         <module>design-pattern</module>
         <module>java-features</module>
         <module>juc-tutorials</module>
+        <module>java-features/java-21-features</module>
+        <module>java-features/java-22-futures</module>
     </modules>
 
     <packaging>pom</packaging>
