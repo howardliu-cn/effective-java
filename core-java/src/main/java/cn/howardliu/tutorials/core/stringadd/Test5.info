@@ -1,0 +1,93 @@
+Classfile /Users/liuxinghao/Documents/work/code/cn.howardliu/effective-java/core-java/src/main/java/cn/howardliu/tutorials/core/Test5.class
+  Last modified 2024-9-27; size 571 bytes
+  MD5 checksum 41ffb71359f9edc736e6cf5b755e6b7f
+  Compiled from "Test5.java"
+public class cn.howardliu.tutorials.core.Test5
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #10.#19        // java/lang/Object."<init>":()V
+   #2 = Class              #20            // java/lang/StringBuilder
+   #3 = Methodref          #2.#19         // java/lang/StringBuilder."<init>":()V
+   #4 = String             #21            //
+   #5 = Methodref          #2.#22         // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #6 = Methodref          #23.#24        // java/lang/System.currentTimeMillis:()J
+   #7 = Methodref          #2.#25         // java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+   #8 = Methodref          #2.#26         // java/lang/StringBuilder.toString:()Ljava/lang/String;
+   #9 = Class              #27            // cn/howardliu/tutorials/core/Test5
+  #10 = Class              #28            // java/lang/Object
+  #11 = Utf8               <init>
+  #12 = Utf8               ()V
+  #13 = Utf8               Code
+  #14 = Utf8               LineNumberTable
+  #15 = Utf8               toString
+  #16 = Utf8               ()Ljava/lang/String;
+  #17 = Utf8               SourceFile
+  #18 = Utf8               Test5.java
+  #19 = NameAndType        #11:#12        // "<init>":()V
+  #20 = Utf8               java/lang/StringBuilder
+  #21 = Utf8
+  #22 = NameAndType        #29:#30        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #23 = Class              #31            // java/lang/System
+  #24 = NameAndType        #32:#33        // currentTimeMillis:()J
+  #25 = NameAndType        #29:#34        // append:(J)Ljava/lang/StringBuilder;
+  #26 = NameAndType        #15:#16        // toString:()Ljava/lang/String;
+  #27 = Utf8               cn/howardliu/tutorials/core/Test5
+  #28 = Utf8               java/lang/Object
+  #29 = Utf8               append
+  #30 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #31 = Utf8               java/lang/System
+  #32 = Utf8               currentTimeMillis
+  #33 = Utf8               ()J
+  #34 = Utf8               (J)Ljava/lang/StringBuilder;
+{
+  public cn.howardliu.tutorials.core.Test5();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 7: 0
+
+  public java.lang.String toString();
+    descriptor: ()Ljava/lang/String;
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=1
+         0: new           #2                  // class java/lang/StringBuilder
+         3: dup
+         4: invokespecial #3                  // Method java/lang/StringBuilder."<init>":()V
+         7: ldc           #4                  // String
+         9: invokevirtual #5                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        12: invokestatic  #6                  // Method java/lang/System.currentTimeMillis:()J
+        15: invokevirtual #7                  // Method java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+        18: invokevirtual #8                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        21: astore_1
+        22: new           #2                  // class java/lang/StringBuilder
+        25: dup
+        26: invokespecial #3                  // Method java/lang/StringBuilder."<init>":()V
+        29: ldc           #4                  // String
+        31: invokevirtual #5                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        34: invokestatic  #6                  // Method java/lang/System.currentTimeMillis:()J
+        37: invokevirtual #7                  // Method java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+        40: invokevirtual #8                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        43: astore_2
+        44: new           #2                  // class java/lang/StringBuilder
+        47: dup
+        48: invokespecial #3                  // Method java/lang/StringBuilder."<init>":()V
+        51: aload_1
+        52: invokevirtual #5                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        55: aload_2
+        56: invokevirtual #5                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        59: invokevirtual #8                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        62: areturn
+      LineNumberTable:
+        line 9: 0
+        line 10: 22
+        line 11: 44
+}
+SourceFile: "Test5.java"

@@ -1,0 +1,97 @@
+Classfile /Users/liuxinghao/Documents/work/code/cn.howardliu/effective-java/core-java/src/main/java/cn/howardliu/tutorials/core/stringfor/Test5.class
+  Last modified 2024-9-27; size 622 bytes
+  MD5 checksum 9ec3497595c89e6829985c1dec88a4a9
+  Compiled from "Test5.java"
+public class cn.howardliu.tutorials.core.stringfor.Test5
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #10.#21        // java/lang/Object."<init>":()V
+   #2 = String             #22            //
+   #3 = Class              #23            // java/lang/StringBuilder
+   #4 = Methodref          #3.#21         // java/lang/StringBuilder."<init>":()V
+   #5 = Methodref          #3.#24         // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #6 = Methodref          #25.#26        // java/lang/System.currentTimeMillis:()J
+   #7 = Methodref          #3.#27         // java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+   #8 = Methodref          #3.#28         // java/lang/StringBuilder.toString:()Ljava/lang/String;
+   #9 = Class              #29            // cn/howardliu/tutorials/core/stringfor/Test5
+  #10 = Class              #30            // java/lang/Object
+  #11 = Utf8               <init>
+  #12 = Utf8               ()V
+  #13 = Utf8               Code
+  #14 = Utf8               LineNumberTable
+  #15 = Utf8               toString
+  #16 = Utf8               ()Ljava/lang/String;
+  #17 = Utf8               StackMapTable
+  #18 = Class              #31            // java/lang/String
+  #19 = Utf8               SourceFile
+  #20 = Utf8               Test5.java
+  #21 = NameAndType        #11:#12        // "<init>":()V
+  #22 = Utf8
+  #23 = Utf8               java/lang/StringBuilder
+  #24 = NameAndType        #32:#33        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #25 = Class              #34            // java/lang/System
+  #26 = NameAndType        #35:#36        // currentTimeMillis:()J
+  #27 = NameAndType        #32:#37        // append:(J)Ljava/lang/StringBuilder;
+  #28 = NameAndType        #15:#16        // toString:()Ljava/lang/String;
+  #29 = Utf8               cn/howardliu/tutorials/core/stringfor/Test5
+  #30 = Utf8               java/lang/Object
+  #31 = Utf8               java/lang/String
+  #32 = Utf8               append
+  #33 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #34 = Utf8               java/lang/System
+  #35 = Utf8               currentTimeMillis
+  #36 = Utf8               ()J
+  #37 = Utf8               (J)Ljava/lang/StringBuilder;
+{
+  public cn.howardliu.tutorials.core.stringfor.Test5();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 7: 0
+
+  public java.lang.String toString();
+    descriptor: ()Ljava/lang/String;
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=1
+         0: ldc           #2                  // String
+         2: astore_1
+         3: iconst_0
+         4: istore_2
+         5: iload_2
+         6: bipush        100
+         8: if_icmpge     38
+        11: new           #3                  // class java/lang/StringBuilder
+        14: dup
+        15: invokespecial #4                  // Method java/lang/StringBuilder."<init>":()V
+        18: aload_1
+        19: invokevirtual #5                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        22: invokestatic  #6                  // Method java/lang/System.currentTimeMillis:()J
+        25: invokevirtual #7                  // Method java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+        28: invokevirtual #8                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        31: astore_1
+        32: iinc          2, 1
+        35: goto          5
+        38: aload_1
+        39: areturn
+      LineNumberTable:
+        line 9: 0
+        line 10: 3
+        line 11: 11
+        line 10: 32
+        line 13: 38
+      StackMapTable: number_of_entries = 2
+        frame_type = 253 /* append */
+          offset_delta = 5
+          locals = [ class java/lang/String, int ]
+        frame_type = 250 /* chop */
+          offset_delta = 32
+}
+SourceFile: "Test5.java"

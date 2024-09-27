@@ -1,0 +1,104 @@
+Classfile /Users/liuxinghao/Documents/work/code/cn.howardliu/effective-java/core-java/src/main/java/cn/howardliu/tutorials/core/Test4.class
+  Last modified 2024年9月27日; size 926 bytes
+  MD5 checksum 7c172f275a1b074c67a237f3ba0fbe5a
+  Compiled from "Test4.java"
+public class cn.howardliu.tutorials.core.Test4
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #8                          // cn/howardliu/tutorials/core/Test4
+  super_class: #9                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #9.#18         // java/lang/Object."<init>":()V
+   #2 = Methodref          #19.#20        // java/lang/System.currentTimeMillis:()J
+   #3 = InvokeDynamic      #0:#24         // #0:makeConcatWithConstants:(J)Ljava/lang/String;
+   #4 = Class              #25            // java/lang/StringBuffer
+   #5 = Methodref          #4.#18         // java/lang/StringBuffer."<init>":()V
+   #6 = Methodref          #4.#26         // java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+   #7 = Methodref          #4.#27         // java/lang/StringBuffer.toString:()Ljava/lang/String;
+   #8 = Class              #28            // cn/howardliu/tutorials/core/Test4
+   #9 = Class              #29            // java/lang/Object
+  #10 = Utf8               <init>
+  #11 = Utf8               ()V
+  #12 = Utf8               Code
+  #13 = Utf8               LineNumberTable
+  #14 = Utf8               toString
+  #15 = Utf8               ()Ljava/lang/String;
+  #16 = Utf8               SourceFile
+  #17 = Utf8               Test4.java
+  #18 = NameAndType        #10:#11        // "<init>":()V
+  #19 = Class              #30            // java/lang/System
+  #20 = NameAndType        #31:#32        // currentTimeMillis:()J
+  #21 = Utf8               BootstrapMethods
+  #22 = MethodHandle       6:#33          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #23 = String             #34            // \u0001
+  #24 = NameAndType        #35:#36        // makeConcatWithConstants:(J)Ljava/lang/String;
+  #25 = Utf8               java/lang/StringBuffer
+  #26 = NameAndType        #37:#38        // append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  #27 = NameAndType        #14:#15        // toString:()Ljava/lang/String;
+  #28 = Utf8               cn/howardliu/tutorials/core/Test4
+  #29 = Utf8               java/lang/Object
+  #30 = Utf8               java/lang/System
+  #31 = Utf8               currentTimeMillis
+  #32 = Utf8               ()J
+  #33 = Methodref          #39.#40        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #34 = Utf8               \u0001
+  #35 = Utf8               makeConcatWithConstants
+  #36 = Utf8               (J)Ljava/lang/String;
+  #37 = Utf8               append
+  #38 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuffer;
+  #39 = Class              #41            // java/lang/invoke/StringConcatFactory
+  #40 = NameAndType        #35:#45        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #41 = Utf8               java/lang/invoke/StringConcatFactory
+  #42 = Class              #47            // java/lang/invoke/MethodHandles$Lookup
+  #43 = Utf8               Lookup
+  #44 = Utf8               InnerClasses
+  #45 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #46 = Class              #48            // java/lang/invoke/MethodHandles
+  #47 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #48 = Utf8               java/lang/invoke/MethodHandles
+{
+  public cn.howardliu.tutorials.core.Test4();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 7: 0
+
+  public java.lang.String toString();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: invokestatic  #2                  // Method java/lang/System.currentTimeMillis:()J
+         3: invokedynamic #3,  0              // InvokeDynamic #0:makeConcatWithConstants:(J)Ljava/lang/String;
+         8: astore_1
+         9: invokestatic  #2                  // Method java/lang/System.currentTimeMillis:()J
+        12: invokedynamic #3,  0              // InvokeDynamic #0:makeConcatWithConstants:(J)Ljava/lang/String;
+        17: astore_2
+        18: new           #4                  // class java/lang/StringBuffer
+        21: dup
+        22: invokespecial #5                  // Method java/lang/StringBuffer."<init>":()V
+        25: aload_1
+        26: invokevirtual #6                  // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+        29: aload_2
+        30: invokevirtual #6                  // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+        33: invokevirtual #7                  // Method java/lang/StringBuffer.toString:()Ljava/lang/String;
+        36: areturn
+      LineNumberTable:
+        line 9: 0
+        line 10: 9
+        line 11: 18
+}
+SourceFile: "Test4.java"
+InnerClasses:
+  public static final #43= #42 of #46;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #22 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #23 \u0001

@@ -1,0 +1,91 @@
+Classfile /Users/liuxinghao/Documents/work/code/cn.howardliu/effective-java/core-java/src/main/java/cn/howardliu/tutorials/core/stringfor/Test4.class
+  Last modified 2024年9月27日; size 529 bytes
+  MD5 checksum 3591e8c2e19d9d8d94051e11704f36a0
+  Compiled from "Test4.java"
+public class cn.howardliu.tutorials.core.stringfor.Test4
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #7                          // cn/howardliu/tutorials/core/stringfor/Test4
+  super_class: #8                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #8.#18         // java/lang/Object."<init>":()V
+   #2 = Class              #19            // java/lang/StringBuffer
+   #3 = Methodref          #2.#18         // java/lang/StringBuffer."<init>":()V
+   #4 = Methodref          #20.#21        // java/lang/System.currentTimeMillis:()J
+   #5 = Methodref          #2.#22         // java/lang/StringBuffer.append:(J)Ljava/lang/StringBuffer;
+   #6 = Methodref          #2.#23         // java/lang/StringBuffer.toString:()Ljava/lang/String;
+   #7 = Class              #24            // cn/howardliu/tutorials/core/stringfor/Test4
+   #8 = Class              #25            // java/lang/Object
+   #9 = Utf8               <init>
+  #10 = Utf8               ()V
+  #11 = Utf8               Code
+  #12 = Utf8               LineNumberTable
+  #13 = Utf8               toString
+  #14 = Utf8               ()Ljava/lang/String;
+  #15 = Utf8               StackMapTable
+  #16 = Utf8               SourceFile
+  #17 = Utf8               Test4.java
+  #18 = NameAndType        #9:#10         // "<init>":()V
+  #19 = Utf8               java/lang/StringBuffer
+  #20 = Class              #26            // java/lang/System
+  #21 = NameAndType        #27:#28        // currentTimeMillis:()J
+  #22 = NameAndType        #29:#30        // append:(J)Ljava/lang/StringBuffer;
+  #23 = NameAndType        #13:#14        // toString:()Ljava/lang/String;
+  #24 = Utf8               cn/howardliu/tutorials/core/stringfor/Test4
+  #25 = Utf8               java/lang/Object
+  #26 = Utf8               java/lang/System
+  #27 = Utf8               currentTimeMillis
+  #28 = Utf8               ()J
+  #29 = Utf8               append
+  #30 = Utf8               (J)Ljava/lang/StringBuffer;
+{
+  public cn.howardliu.tutorials.core.stringfor.Test4();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 7: 0
+
+  public java.lang.String toString();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=1
+         0: new           #2                  // class java/lang/StringBuffer
+         3: dup
+         4: invokespecial #3                  // Method java/lang/StringBuffer."<init>":()V
+         7: astore_1
+         8: iconst_0
+         9: istore_2
+        10: iload_2
+        11: bipush        10
+        13: if_icmpge     30
+        16: aload_1
+        17: invokestatic  #4                  // Method java/lang/System.currentTimeMillis:()J
+        20: invokevirtual #5                  // Method java/lang/StringBuffer.append:(J)Ljava/lang/StringBuffer;
+        23: pop
+        24: iinc          2, 1
+        27: goto          10
+        30: aload_1
+        31: invokevirtual #6                  // Method java/lang/StringBuffer.toString:()Ljava/lang/String;
+        34: areturn
+      LineNumberTable:
+        line 9: 0
+        line 10: 8
+        line 11: 16
+        line 10: 24
+        line 13: 30
+      StackMapTable: number_of_entries = 2
+        frame_type = 253 /* append */
+          offset_delta = 10
+          locals = [ class java/lang/StringBuffer, int ]
+        frame_type = 250 /* chop */
+          offset_delta = 19
+}
+SourceFile: "Test4.java"

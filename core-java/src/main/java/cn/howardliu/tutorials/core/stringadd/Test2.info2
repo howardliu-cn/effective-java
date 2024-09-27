@@ -1,0 +1,21 @@
+Compiled from "Test2.java"
+public class cn.howardliu.tutorials.core.Test2 {
+  public cn.howardliu.tutorials.core.Test2();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public java.lang.String toString();
+    Code:
+       0: invokestatic  #2                  // Method java/lang/System.currentTimeMillis:()J
+       3: invokedynamic #3,  0              // InvokeDynamic #0:makeConcatWithConstants:(J)Ljava/lang/String;
+       8: astore_1
+       9: invokestatic  #2                  // Method java/lang/System.currentTimeMillis:()J
+      12: invokedynamic #3,  0              // InvokeDynamic #0:makeConcatWithConstants:(J)Ljava/lang/String;
+      17: astore_2
+      18: aload_1
+      19: aload_2
+      20: invokevirtual #4                  // Method java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
+      23: areturn
+}

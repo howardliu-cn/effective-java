@@ -1,0 +1,2444 @@
+[
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringAdd",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "2000"
+        },
+        "primaryMetric" : {
+            "score" : 0.008895984370331726,
+            "scoreError" : 0.021708711823604347,
+            "scoreConfidence" : [
+                -0.01281272745327262,
+                0.030604696193936073
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.003948945441782324,
+                "50.0" : 0.010104748169599432,
+                "90.0" : 0.011425495700345715,
+                "95.0" : 0.011425495700345715,
+                "99.0" : 0.011425495700345715,
+                "99.9" : 0.011425495700345715,
+                "99.99" : 0.011425495700345715,
+                "99.999" : 0.011425495700345715,
+                "99.9999" : 0.011425495700345715,
+                "100.0" : 0.011425495700345715
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    0.010283374298590263,
+                    0.011425495700345715
+                ],
+                [
+                    0.003948945441782324,
+                    0.009926122040608599
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringAdd",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "4000"
+        },
+        "primaryMetric" : {
+            "score" : 0.0026169719740227913,
+            "scoreError" : 8.116000340006829E-5,
+            "scoreConfidence" : [
+                0.002535811970622723,
+                0.0026981319774228595
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.002599629678577246,
+                "50.0" : 0.0026193612091050056,
+                "90.0" : 0.0026295357993039075,
+                "95.0" : 0.0026295357993039075,
+                "99.0" : 0.0026295357993039075,
+                "99.9" : 0.0026295357993039075,
+                "99.99" : 0.0026295357993039075,
+                "99.999" : 0.0026295357993039075,
+                "99.9999" : 0.0026295357993039075,
+                "100.0" : 0.0026295357993039075
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    0.0026206278737014492,
+                    0.0026295357993039075
+                ],
+                [
+                    0.002599629678577246,
+                    0.0026180945445085624
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringAdd",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "6000"
+        },
+        "primaryMetric" : {
+            "score" : 0.0010898876383910526,
+            "scoreError" : 4.822154512235423E-5,
+            "scoreConfidence" : [
+                0.0010416660932686984,
+                0.0011381091835134067
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.0010799500690179484,
+                "50.0" : 0.0010907727251408441,
+                "90.0" : 0.001098055034264574,
+                "95.0" : 0.001098055034264574,
+                "99.0" : 0.001098055034264574,
+                "99.9" : 0.001098055034264574,
+                "99.99" : 0.001098055034264574,
+                "99.999" : 0.001098055034264574,
+                "99.9999" : 0.001098055034264574,
+                "100.0" : 0.001098055034264574
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    0.0010906481363348302,
+                    0.0010799500690179484
+                ],
+                [
+                    0.001090897313946858,
+                    0.001098055034264574
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringAdd",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "8000"
+        },
+        "primaryMetric" : {
+            "score" : 5.745258139185242E-4,
+            "scoreError" : 5.12484284261529E-5,
+            "scoreConfidence" : [
+                5.232773854923713E-4,
+                6.25774242344677E-4
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5.635335961514495E-4,
+                "50.0" : 5.763184622807765E-4,
+                "90.0" : 5.819327349610942E-4,
+                "95.0" : 5.819327349610942E-4,
+                "99.0" : 5.819327349610942E-4,
+                "99.9" : 5.819327349610942E-4,
+                "99.99" : 5.819327349610942E-4,
+                "99.999" : 5.819327349610942E-4,
+                "99.9999" : 5.819327349610942E-4,
+                "100.0" : 5.819327349610942E-4
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    5.635335961514495E-4,
+                    5.745057393966232E-4
+                ],
+                [
+                    5.819327349610942E-4,
+                    5.781311851649298E-4
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringAdd",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 3.5056273822620354E-4,
+            "scoreError" : 1.207703992680737E-5,
+            "scoreConfidence" : [
+                3.384856982993962E-4,
+                3.626397781530109E-4
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.4891131891792986E-4,
+                "50.0" : 3.50314856901019E-4,
+                "90.0" : 3.527099201848462E-4,
+                "95.0" : 3.527099201848462E-4,
+                "99.0" : 3.527099201848462E-4,
+                "99.9" : 3.527099201848462E-4,
+                "99.99" : 3.527099201848462E-4,
+                "99.999" : 3.527099201848462E-4,
+                "99.9999" : 3.527099201848462E-4,
+                "100.0" : 3.527099201848462E-4
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    3.4891131891792986E-4,
+                    3.490863840611292E-4
+                ],
+                [
+                    3.515433297409088E-4,
+                    3.527099201848462E-4
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBufferAdd",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "2000"
+        },
+        "primaryMetric" : {
+            "score" : 0.2100986999870733,
+            "scoreError" : 0.05540108078145029,
+            "scoreConfidence" : [
+                0.15469761920562303,
+                0.2654997807685236
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.20255945287033883,
+                "50.0" : 0.21001023724563025,
+                "90.0" : 0.217814872586694,
+                "95.0" : 0.217814872586694,
+                "99.0" : 0.217814872586694,
+                "99.9" : 0.217814872586694,
+                "99.99" : 0.217814872586694,
+                "99.999" : 0.217814872586694,
+                "99.9999" : 0.217814872586694,
+                "100.0" : 0.217814872586694
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    0.217814872586694,
+                    0.20255945287033883
+                ],
+                [
+                    0.21722526471072928,
+                    0.20279520978053123
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBufferAdd",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "4000"
+        },
+        "primaryMetric" : {
+            "score" : 0.10748875215574986,
+            "scoreError" : 0.053129600555807684,
+            "scoreConfidence" : [
+                0.05435915159994218,
+                0.16061835271155755
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.10017442574314743,
+                "50.0" : 0.1075483797649653,
+                "90.0" : 0.11468382334992137,
+                "95.0" : 0.11468382334992137,
+                "99.0" : 0.11468382334992137,
+                "99.9" : 0.11468382334992137,
+                "99.99" : 0.11468382334992137,
+                "99.999" : 0.11468382334992137,
+                "99.9999" : 0.11468382334992137,
+                "100.0" : 0.11468382334992137
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    0.11468382334992137,
+                    0.10056548508750679
+                ],
+                [
+                    0.11453127444242381,
+                    0.10017442574314743
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBufferAdd",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "6000"
+        },
+        "primaryMetric" : {
+            "score" : 0.07219673019568248,
+            "scoreError" : 0.048444352885938166,
+            "scoreConfidence" : [
+                0.02375237730974432,
+                0.12064108308162065
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.06564134583488855,
+                "50.0" : 0.07207904146040717,
+                "90.0" : 0.07898749202702703,
+                "95.0" : 0.07898749202702703,
+                "99.0" : 0.07898749202702703,
+                "99.9" : 0.07898749202702703,
+                "99.99" : 0.07898749202702703,
+                "99.999" : 0.07898749202702703,
+                "99.9999" : 0.07898749202702703,
+                "100.0" : 0.07898749202702703
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    0.07898749202702703,
+                    0.06564134583488855
+                ],
+                [
+                    0.07838346824890838,
+                    0.06577461467190596
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBufferAdd",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "8000"
+        },
+        "primaryMetric" : {
+            "score" : 0.05529213096764302,
+            "scoreError" : 0.03890924259509607,
+            "scoreConfidence" : [
+                0.01638288837254695,
+                0.0942013735627391
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.050073543787965,
+                "50.0" : 0.055290804469084326,
+                "90.0" : 0.06051337114443844,
+                "95.0" : 0.06051337114443844,
+                "99.0" : 0.06051337114443844,
+                "99.9" : 0.06051337114443844,
+                "99.99" : 0.06051337114443844,
+                "99.999" : 0.06051337114443844,
+                "99.9999" : 0.06051337114443844,
+                "100.0" : 0.06051337114443844
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    0.06049999302574031,
+                    0.05008161591242835
+                ],
+                [
+                    0.06051337114443844,
+                    0.050073543787965
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBufferAdd",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 0.04598072743995794,
+            "scoreError" : 0.012924676207009845,
+            "scoreConfidence" : [
+                0.033056051232948094,
+                0.05890540364696778
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.044050562675064575,
+                "50.0" : 0.04606544142574283,
+                "90.0" : 0.0477414642332815,
+                "95.0" : 0.0477414642332815,
+                "99.0" : 0.0477414642332815,
+                "99.9" : 0.0477414642332815,
+                "99.99" : 0.0477414642332815,
+                "99.999" : 0.0477414642332815,
+                "99.9999" : 0.0477414642332815,
+                "100.0" : 0.0477414642332815
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    0.0477414642332815,
+                    0.044050562675064575
+                ],
+                [
+                    0.04767186796289489,
+                    0.04445901488859077
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBuilderAdd",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "2000"
+        },
+        "primaryMetric" : {
+            "score" : 0.414068266566272,
+            "scoreError" : 0.13843037807931835,
+            "scoreConfidence" : [
+                0.27563788848695364,
+                0.5524986446455904
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.3925574399789501,
+                "50.0" : 0.4155440296662845,
+                "90.0" : 0.43262756695356885,
+                "95.0" : 0.43262756695356885,
+                "99.0" : 0.43262756695356885,
+                "99.9" : 0.43262756695356885,
+                "99.99" : 0.43262756695356885,
+                "99.999" : 0.43262756695356885,
+                "99.9999" : 0.43262756695356885,
+                "100.0" : 0.43262756695356885
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    0.3925574399789501,
+                    0.43262756695356885
+                ],
+                [
+                    0.3987330230710565,
+                    0.4323550362615125
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBuilderAdd",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "4000"
+        },
+        "primaryMetric" : {
+            "score" : 0.19957129555945127,
+            "scoreError" : 0.038930430205564776,
+            "scoreConfidence" : [
+                0.1606408653538865,
+                0.23850172576501605
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.19221541130453473,
+                "50.0" : 0.1999535323567674,
+                "90.0" : 0.20616270621973548,
+                "95.0" : 0.20616270621973548,
+                "99.0" : 0.20616270621973548,
+                "99.9" : 0.20616270621973548,
+                "99.99" : 0.20616270621973548,
+                "99.999" : 0.20616270621973548,
+                "99.9999" : 0.20616270621973548,
+                "100.0" : 0.20616270621973548
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    0.19760440005107566,
+                    0.20616270621973548
+                ],
+                [
+                    0.19221541130453473,
+                    0.20230266466245916
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBuilderAdd",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "6000"
+        },
+        "primaryMetric" : {
+            "score" : 0.13269323669089042,
+            "scoreError" : 0.008994597831433056,
+            "scoreConfidence" : [
+                0.12369863885945737,
+                0.14168783452232347
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.13139350625952664,
+                "50.0" : 0.13273753021506896,
+                "90.0" : 0.13390438007389713,
+                "95.0" : 0.13390438007389713,
+                "99.0" : 0.13390438007389713,
+                "99.9" : 0.13390438007389713,
+                "99.99" : 0.13390438007389713,
+                "99.999" : 0.13390438007389713,
+                "99.9999" : 0.13390438007389713,
+                "100.0" : 0.13390438007389713
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    0.13390438007389713,
+                    0.13158595179813293
+                ],
+                [
+                    0.13388910863200498,
+                    0.13139350625952664
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBuilderAdd",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "8000"
+        },
+        "primaryMetric" : {
+            "score" : 0.10183195879525439,
+            "scoreError" : 0.015060148616158177,
+            "scoreConfidence" : [
+                0.08677181017909621,
+                0.11689210741141257
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.09992821553326175,
+                "50.0" : 0.10135637165274274,
+                "90.0" : 0.10468687634227036,
+                "95.0" : 0.10468687634227036,
+                "99.0" : 0.10468687634227036,
+                "99.9" : 0.10468687634227036,
+                "99.99" : 0.10468687634227036,
+                "99.999" : 0.10468687634227036,
+                "99.9999" : 0.10468687634227036,
+                "100.0" : 0.10468687634227036
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    0.10278248104443166,
+                    0.09992821553326175
+                ],
+                [
+                    0.10468687634227036,
+                    0.09993026226105381
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBuilderAdd",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 0.08202775757335592,
+            "scoreError" : 0.018462102684419245,
+            "scoreConfidence" : [
+                0.06356565488893667,
+                0.10048986025777518
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.07947413698942474,
+                "50.0" : 0.08184686496648647,
+                "90.0" : 0.08494316337102603,
+                "95.0" : 0.08494316337102603,
+                "99.0" : 0.08494316337102603,
+                "99.9" : 0.08494316337102603,
+                "99.99" : 0.08494316337102603,
+                "99.999" : 0.08494316337102603,
+                "99.9999" : 0.08494316337102603,
+                "100.0" : 0.08494316337102603
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    0.08494316337102603,
+                    0.07947413698942474
+                ],
+                [
+                    0.08401502802679824,
+                    0.07967870190617468
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringConcat",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "2000"
+        },
+        "primaryMetric" : {
+            "score" : 0.012401743092759801,
+            "scoreError" : 2.4396898125203604E-4,
+            "scoreConfidence" : [
+                0.012157774111507764,
+                0.012645712074011838
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.01235873791801437,
+                "50.0" : 0.012400569625993221,
+                "90.0" : 0.012447095201038396,
+                "95.0" : 0.012447095201038396,
+                "99.0" : 0.012447095201038396,
+                "99.9" : 0.012447095201038396,
+                "99.99" : 0.012447095201038396,
+                "99.999" : 0.012447095201038396,
+                "99.9999" : 0.012447095201038396,
+                "100.0" : 0.012447095201038396
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    0.012447095201038396,
+                    0.012414119296928972
+                ],
+                [
+                    0.01235873791801437,
+                    0.01238701995505747
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringConcat",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "4000"
+        },
+        "primaryMetric" : {
+            "score" : 0.0025951980001305604,
+            "scoreError" : 5.7710932407108555E-5,
+            "scoreConfidence" : [
+                0.002537487067723452,
+                0.002652908932537669
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.002584125107886685,
+                "50.0" : 0.002595438825518769,
+                "90.0" : 0.002605789241598019,
+                "95.0" : 0.002605789241598019,
+                "99.0" : 0.002605789241598019,
+                "99.9" : 0.002605789241598019,
+                "99.99" : 0.002605789241598019,
+                "99.999" : 0.002605789241598019,
+                "99.9999" : 0.002605789241598019,
+                "100.0" : 0.002605789241598019
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    0.002596918669645667,
+                    0.002605789241598019
+                ],
+                [
+                    0.002584125107886685,
+                    0.0025939589813918714
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringConcat",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "6000"
+        },
+        "primaryMetric" : {
+            "score" : 0.001079358037476847,
+            "scoreError" : 2.452327599424171E-5,
+            "scoreConfidence" : [
+                0.0010548347614826054,
+                0.0011038813134710886
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.001075575866561387,
+                "50.0" : 0.0010791892217944634,
+                "90.0" : 0.0010834778397570742,
+                "95.0" : 0.0010834778397570742,
+                "99.0" : 0.0010834778397570742,
+                "99.9" : 0.0010834778397570742,
+                "99.99" : 0.0010834778397570742,
+                "99.999" : 0.0010834778397570742,
+                "99.9999" : 0.0010834778397570742,
+                "100.0" : 0.0010834778397570742
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    0.0010834778397570742,
+                    0.0010816255698151847
+                ],
+                [
+                    0.0010767528737737422,
+                    0.001075575866561387
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringConcat",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "8000"
+        },
+        "primaryMetric" : {
+            "score" : 5.71148882176339E-4,
+            "scoreError" : 1.7281449827194366E-5,
+            "scoreConfidence" : [
+                5.538674323491446E-4,
+                5.884303320035333E-4
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5.681183012156921E-4,
+                "50.0" : 5.714986170806001E-4,
+                "90.0" : 5.73479993328464E-4,
+                "95.0" : 5.73479993328464E-4,
+                "99.0" : 5.73479993328464E-4,
+                "99.9" : 5.73479993328464E-4,
+                "99.99" : 5.73479993328464E-4,
+                "99.999" : 5.73479993328464E-4,
+                "99.9999" : 5.73479993328464E-4,
+                "100.0" : 5.73479993328464E-4
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    5.696830057206306E-4,
+                    5.733142284405695E-4
+                ],
+                [
+                    5.681183012156921E-4,
+                    5.73479993328464E-4
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringConcat",
+        "mode" : "thrpt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 3.4705954962044013E-4,
+            "scoreError" : 1.7289674722503573E-5,
+            "scoreConfidence" : [
+                3.2976987489793653E-4,
+                3.643492243429437E-4
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.434632908868022E-4,
+                "50.0" : 3.474964911429576E-4,
+                "90.0" : 3.49781925309043E-4,
+                "95.0" : 3.49781925309043E-4,
+                "99.0" : 3.49781925309043E-4,
+                "99.9" : 3.49781925309043E-4,
+                "99.99" : 3.49781925309043E-4,
+                "99.999" : 3.49781925309043E-4,
+                "99.9999" : 3.49781925309043E-4,
+                "100.0" : 3.49781925309043E-4
+            },
+            "scoreUnit" : "ops/us",
+            "rawData" : [
+                [
+                    3.481089471223638E-4,
+                    3.468840351635514E-4
+                ],
+                [
+                    3.434632908868022E-4,
+                    3.49781925309043E-4
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringAdd",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "2000"
+        },
+        "primaryMetric" : {
+            "score" : 323.1764338866709,
+            "scoreError" : 20.029913525593667,
+            "scoreConfidence" : [
+                303.14652036107725,
+                343.20634741226456
+            ],
+            "scorePercentiles" : {
+                "0.0" : 319.0104635440746,
+                "50.0" : 323.83815010586886,
+                "90.0" : 326.0189717908712,
+                "95.0" : 326.0189717908712,
+                "99.0" : 326.0189717908712,
+                "99.9" : 326.0189717908712,
+                "99.99" : 326.0189717908712,
+                "99.999" : 326.0189717908712,
+                "99.9999" : 326.0189717908712,
+                "100.0" : 326.0189717908712
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    324.9589638759175,
+                    326.0189717908712
+                ],
+                [
+                    319.0104635440746,
+                    322.7173363358203
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringAdd",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "4000"
+        },
+        "primaryMetric" : {
+            "score" : 1535.089256831474,
+            "scoreError" : 47.042557083277195,
+            "scoreConfidence" : [
+                1488.0466997481967,
+                1582.131813914751
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1529.0522533798653,
+                "50.0" : 1533.2800895475248,
+                "90.0" : 1544.7445948509803,
+                "95.0" : 1544.7445948509803,
+                "99.0" : 1544.7445948509803,
+                "99.9" : 1544.7445948509803,
+                "99.99" : 1544.7445948509803,
+                "99.999" : 1544.7445948509803,
+                "99.9999" : 1544.7445948509803,
+                "100.0" : 1544.7445948509803
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    1544.7445948509803,
+                    1536.6544904475802
+                ],
+                [
+                    1529.9056886474696,
+                    1529.0522533798653
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringAdd",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "6000"
+        },
+        "primaryMetric" : {
+            "score" : 3728.677483466101,
+            "scoreError" : 172.79454909990062,
+            "scoreConfidence" : [
+                3555.8829343662005,
+                3901.4720325660014
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3701.565335637667,
+                "50.0" : 3729.079296051977,
+                "90.0" : 3754.9860061227837,
+                "95.0" : 3754.9860061227837,
+                "99.0" : 3754.9860061227837,
+                "99.9" : 3754.9860061227837,
+                "99.99" : 3754.9860061227837,
+                "99.999" : 3754.9860061227837,
+                "99.9999" : 3754.9860061227837,
+                "100.0" : 3754.9860061227837
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    3754.9860061227837,
+                    3748.0210049682146
+                ],
+                [
+                    3710.1375871357395,
+                    3701.565335637667
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringAdd",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "8000"
+        },
+        "primaryMetric" : {
+            "score" : 6975.846219015359,
+            "scoreError" : 306.96075744216176,
+            "scoreConfidence" : [
+                6668.885461573197,
+                7282.80697645752
+            ],
+            "scorePercentiles" : {
+                "0.0" : 6942.269518284358,
+                "50.0" : 6958.29839525019,
+                "90.0" : 7044.518567276695,
+                "95.0" : 7044.518567276695,
+                "99.0" : 7044.518567276695,
+                "99.9" : 7044.518567276695,
+                "99.99" : 7044.518567276695,
+                "99.999" : 7044.518567276695,
+                "99.9999" : 7044.518567276695,
+                "100.0" : 7044.518567276695
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    6945.84189336899,
+                    6942.269518284358
+                ],
+                [
+                    7044.518567276695,
+                    6970.75489713139
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringAdd",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 11477.071489960686,
+            "scoreError" : 568.874442369514,
+            "scoreConfidence" : [
+                10908.197047591173,
+                12045.9459323302
+            ],
+            "scorePercentiles" : {
+                "0.0" : 11403.705631288303,
+                "50.0" : 11451.50750894723,
+                "90.0" : 11601.565310659977,
+                "95.0" : 11601.565310659977,
+                "99.0" : 11601.565310659977,
+                "99.9" : 11601.565310659977,
+                "99.99" : 11601.565310659977,
+                "99.999" : 11601.565310659977,
+                "99.9999" : 11601.565310659977,
+                "100.0" : 11601.565310659977
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    11474.546975280824,
+                    11601.565310659977
+                ],
+                [
+                    11428.468042613636,
+                    11403.705631288303
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBufferAdd",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "2000"
+        },
+        "primaryMetric" : {
+            "score" : 19.077569225377406,
+            "scoreError" : 4.873337931719202,
+            "scoreConfidence" : [
+                14.204231293658204,
+                23.95090715709661
+            ],
+            "scorePercentiles" : {
+                "0.0" : 18.40244737326265,
+                "50.0" : 19.083266498011398,
+                "90.0" : 19.741296532224187,
+                "95.0" : 19.741296532224187,
+                "99.0" : 19.741296532224187,
+                "99.9" : 19.741296532224187,
+                "99.99" : 19.741296532224187,
+                "99.999" : 19.741296532224187,
+                "99.9999" : 19.741296532224187,
+                "100.0" : 19.741296532224187
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    18.40244737326265,
+                    19.741296532224187
+                ],
+                [
+                    18.446926029211195,
+                    19.7196069668116
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBufferAdd",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "4000"
+        },
+        "primaryMetric" : {
+            "score" : 37.411297502678416,
+            "scoreError" : 18.527890015728026,
+            "scoreConfidence" : [
+                18.88340748695039,
+                55.93918751840644
+            ],
+            "scorePercentiles" : {
+                "0.0" : 34.86633819685168,
+                "50.0" : 37.438761170326615,
+                "90.0" : 39.90132947320877,
+                "95.0" : 39.90132947320877,
+                "99.0" : 39.90132947320877,
+                "99.9" : 39.90132947320877,
+                "99.99" : 39.90132947320877,
+                "99.999" : 39.90132947320877,
+                "99.9999" : 39.90132947320877,
+                "100.0" : 39.90132947320877
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    34.99089275267292,
+                    39.90132947320877
+                ],
+                [
+                    34.86633819685168,
+                    39.88662958798031
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBufferAdd",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "6000"
+        },
+        "primaryMetric" : {
+            "score" : 55.96301581767217,
+            "scoreError" : 36.25942776427715,
+            "scoreConfidence" : [
+                19.703588053395023,
+                92.22244358194932
+            ],
+            "scorePercentiles" : {
+                "0.0" : 51.0467189891959,
+                "50.0" : 55.98316363950736,
+                "90.0" : 60.83901700247806,
+                "95.0" : 60.83901700247806,
+                "99.0" : 60.83901700247806,
+                "99.9" : 60.83901700247806,
+                "99.99" : 60.83901700247806,
+                "99.999" : 60.83901700247806,
+                "99.9999" : 60.83901700247806,
+                "100.0" : 60.83901700247806
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    51.160816146473366,
+                    60.805511132541355
+                ],
+                [
+                    51.0467189891959,
+                    60.83901700247806
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBufferAdd",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "8000"
+        },
+        "primaryMetric" : {
+            "score" : 73.09426045833027,
+            "scoreError" : 51.64636445824535,
+            "scoreConfidence" : [
+                21.447896000084917,
+                124.74062491657563
+            ],
+            "scorePercentiles" : {
+                "0.0" : 65.96222457405374,
+                "50.0" : 73.11475074848506,
+                "90.0" : 80.18531576229722,
+                "95.0" : 80.18531576229722,
+                "99.0" : 80.18531576229722,
+                "99.9" : 80.18531576229722,
+                "99.99" : 80.18531576229722,
+                "99.999" : 80.18531576229722,
+                "99.9999" : 80.18531576229722,
+                "100.0" : 80.18531576229722
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    65.96222457405374,
+                    79.84090398858952
+                ],
+                [
+                    66.38859750838061,
+                    80.18531576229722
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBufferAdd",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 87.26923060236228,
+            "scoreError" : 21.464464941832293,
+            "scoreConfidence" : [
+                65.80476566053,
+                108.73369554419457
+            ],
+            "scorePercentiles" : {
+                "0.0" : 83.69118511136317,
+                "50.0" : 87.61450267582777,
+                "90.0" : 90.15673194643048,
+                "95.0" : 90.15673194643048,
+                "99.0" : 90.15673194643048,
+                "99.9" : 90.15673194643048,
+                "99.99" : 90.15673194643048,
+                "99.999" : 90.15673194643048,
+                "99.9999" : 90.15673194643048,
+                "100.0" : 90.15673194643048
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    85.19359672763078,
+                    90.15673194643048
+                ],
+                [
+                    83.69118511136317,
+                    90.03540862402475
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBuilderAdd",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "2000"
+        },
+        "primaryMetric" : {
+            "score" : 9.584864301347876,
+            "scoreError" : 2.6642959955938923,
+            "scoreConfidence" : [
+                6.920568305753983,
+                12.249160296941769
+            ],
+            "scorePercentiles" : {
+                "0.0" : 9.211314217914042,
+                "50.0" : 9.583522701158223,
+                "90.0" : 9.961097585161017,
+                "95.0" : 9.961097585161017,
+                "99.0" : 9.961097585161017,
+                "99.9" : 9.961097585161017,
+                "99.99" : 9.961097585161017,
+                "99.999" : 9.961097585161017,
+                "99.9999" : 9.961097585161017,
+                "100.0" : 9.961097585161017
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    9.921816904238243,
+                    9.245228498078202
+                ],
+                [
+                    9.961097585161017,
+                    9.211314217914042
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBuilderAdd",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "4000"
+        },
+        "primaryMetric" : {
+            "score" : 19.900567592518346,
+            "scoreError" : 4.031329981089093,
+            "scoreConfidence" : [
+                15.869237611429252,
+                23.93189757360744
+            ],
+            "scorePercentiles" : {
+                "0.0" : 19.32344163530673,
+                "50.0" : 19.761512956655118,
+                "90.0" : 20.75580282145642,
+                "95.0" : 20.75580282145642,
+                "99.0" : 20.75580282145642,
+                "99.9" : 20.75580282145642,
+                "99.99" : 20.75580282145642,
+                "99.999" : 20.75580282145642,
+                "99.9999" : 20.75580282145642,
+                "100.0" : 20.75580282145642
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    19.940960457663937,
+                    19.582065455646294
+                ],
+                [
+                    20.75580282145642,
+                    19.32344163530673
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBuilderAdd",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "6000"
+        },
+        "primaryMetric" : {
+            "score" : 29.710967188137303,
+            "scoreError" : 2.0822193127946016,
+            "scoreConfidence" : [
+                27.6287478753427,
+                31.793186500931906
+            ],
+            "scorePercentiles" : {
+                "0.0" : 29.346579412925138,
+                "50.0" : 29.69536357636609,
+                "90.0" : 30.106562186891885,
+                "95.0" : 30.106562186891885,
+                "99.0" : 30.106562186891885,
+                "99.9" : 30.106562186891885,
+                "99.99" : 30.106562186891885,
+                "99.999" : 30.106562186891885,
+                "99.9999" : 30.106562186891885,
+                "100.0" : 30.106562186891885
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    29.59113428533333,
+                    30.106562186891885
+                ],
+                [
+                    29.346579412925138,
+                    29.79959286739885
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBuilderAdd",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "8000"
+        },
+        "primaryMetric" : {
+            "score" : 39.76100063695034,
+            "scoreError" : 7.691789243790399,
+            "scoreConfidence" : [
+                32.06921139315995,
+                47.45278988074074
+            ],
+            "scorePercentiles" : {
+                "0.0" : 38.43682903091686,
+                "50.0" : 39.67255579127924,
+                "90.0" : 41.26206193432603,
+                "95.0" : 41.26206193432603,
+                "99.0" : 41.26206193432603,
+                "99.9" : 41.26206193432603,
+                "99.99" : 41.26206193432603,
+                "99.999" : 41.26206193432603,
+                "99.9999" : 41.26206193432603,
+                "100.0" : 41.26206193432603
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    38.43682903091686,
+                    40.0103974375478
+                ],
+                [
+                    39.334714145010665,
+                    41.26206193432603
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringBuilderAdd",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 48.55231123695231,
+            "scoreError" : 12.969441067613385,
+            "scoreConfidence" : [
+                35.58287016933893,
+                61.521752304565695
+            ],
+            "scorePercentiles" : {
+                "0.0" : 46.492436559988676,
+                "50.0" : 48.71275656732644,
+                "90.0" : 50.29129525316771,
+                "95.0" : 50.29129525316771,
+                "99.0" : 50.29129525316771,
+                "99.9" : 50.29129525316771,
+                "99.99" : 50.29129525316771,
+                "99.999" : 50.29129525316771,
+                "99.9999" : 50.29129525316771,
+                "100.0" : 50.29129525316771
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    46.492436559988676,
+                    50.29129525316771
+                ],
+                [
+                    47.16906969403951,
+                    50.256443440613374
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringConcat",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "2000"
+        },
+        "primaryMetric" : {
+            "score" : 332.52681128461575,
+            "scoreError" : 125.26048570314013,
+            "scoreConfidence" : [
+                207.2663255814756,
+                457.7872969877559
+            ],
+            "scorePercentiles" : {
+                "0.0" : 321.88627855787024,
+                "50.0" : 323.32064469885336,
+                "90.0" : 361.5796771828861,
+                "95.0" : 361.5796771828861,
+                "99.0" : 361.5796771828861,
+                "99.9" : 361.5796771828861,
+                "99.99" : 361.5796771828861,
+                "99.999" : 361.5796771828861,
+                "99.9999" : 361.5796771828861,
+                "100.0" : 361.5796771828861
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    321.88627855787024,
+                    322.8491940845382
+                ],
+                [
+                    323.79209531316843,
+                    361.5796771828861
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringConcat",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "4000"
+        },
+        "primaryMetric" : {
+            "score" : 1591.7331199238247,
+            "scoreError" : 186.96928900449373,
+            "scoreConfidence" : [
+                1404.763830919331,
+                1778.7024089283184
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1561.3585855532363,
+                "50.0" : 1587.3197226120083,
+                "90.0" : 1630.9344489180462,
+                "95.0" : 1630.9344489180462,
+                "99.0" : 1630.9344489180462,
+                "99.9" : 1630.9344489180462,
+                "99.99" : 1630.9344489180462,
+                "99.999" : 1630.9344489180462,
+                "99.9999" : 1630.9344489180462,
+                "100.0" : 1630.9344489180462
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    1584.7540772416862,
+                    1630.9344489180462
+                ],
+                [
+                    1589.88536798233,
+                    1561.3585855532363
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringConcat",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "6000"
+        },
+        "primaryMetric" : {
+            "score" : 3769.0233996069846,
+            "scoreError" : 489.7478644319419,
+            "scoreConfidence" : [
+                3279.275535175043,
+                4258.771264038926
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3718.154893546055,
+                "50.0" : 3738.1468739819147,
+                "90.0" : 3881.644956918056,
+                "95.0" : 3881.644956918056,
+                "99.0" : 3881.644956918056,
+                "99.9" : 3881.644956918056,
+                "99.99" : 3881.644956918056,
+                "99.999" : 3881.644956918056,
+                "99.9999" : 3881.644956918056,
+                "100.0" : 3881.644956918056
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    3743.3424870489184,
+                    3732.9512609149115
+                ],
+                [
+                    3718.154893546055,
+                    3881.644956918056
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringConcat",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "8000"
+        },
+        "primaryMetric" : {
+            "score" : 7107.072195370156,
+            "scoreError" : 510.63595521062194,
+            "scoreConfidence" : [
+                6596.436240159534,
+                7617.708150580778
+            ],
+            "scorePercentiles" : {
+                "0.0" : 7014.717604737276,
+                "50.0" : 7118.272776739202,
+                "90.0" : 7177.025623264944,
+                "95.0" : 7177.025623264944,
+                "99.0" : 7177.025623264944,
+                "99.9" : 7177.025623264944,
+                "99.99" : 7177.025623264944,
+                "99.999" : 7177.025623264944,
+                "99.9999" : 7177.025623264944,
+                "100.0" : 7177.025623264944
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    7168.569019367487,
+                    7177.025623264944
+                ],
+                [
+                    7014.717604737276,
+                    7067.976534110916
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cn.howardliu.tutorials.core.StringAppendJmhTest.testStringConcat",
+        "mode" : "avgt",
+        "threads" : 4,
+        "forks" : 2,
+        "jvm" : "/Users/liuxinghao/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-ea",
+            "-Didea.test.cyclic.buffer.size=1048576",
+            "-javaagent:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/lib/idea_rt.jar=58999:/Users/liuxinghao/Applications/IntelliJ IDEA Ultimate.app/Contents/bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-29",
+        "warmupIterations" : 1,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "n" : "10000"
+        },
+        "primaryMetric" : {
+            "score" : 11372.303410858927,
+            "scoreError" : 441.68674382143473,
+            "scoreConfidence" : [
+                10930.616667037493,
+                11813.990154680361
+            ],
+            "scorePercentiles" : {
+                "0.0" : 11300.507678879385,
+                "50.0" : 11369.138988409251,
+                "90.0" : 11450.427987737823,
+                "95.0" : 11450.427987737823,
+                "99.0" : 11450.427987737823,
+                "99.9" : 11450.427987737823,
+                "99.99" : 11450.427987737823,
+                "99.999" : 11450.427987737823,
+                "99.9999" : 11450.427987737823,
+                "100.0" : 11450.427987737823
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    11300.507678879385,
+                    11332.141123531663
+                ],
+                [
+                    11450.427987737823,
+                    11406.13685328684
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+
