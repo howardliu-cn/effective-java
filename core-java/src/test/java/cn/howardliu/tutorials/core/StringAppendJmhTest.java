@@ -12,7 +12,9 @@ import org.openjdk.jmh.annotations.OperationsPerInvocation;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
 import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
+import org.openjdk.jmh.annotations.TearDown;
 import org.openjdk.jmh.annotations.Threads;
 import org.openjdk.jmh.annotations.Warmup;
 import org.openjdk.jmh.infra.Blackhole;
@@ -27,7 +29,7 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
  * Created on 2024-09-27
  */
 @BenchmarkMode({Mode.AverageTime, Mode.Throughput})
-@Warmup(iterations = 1)
+@Warmup(iterations = 1, time = 1, timeUnit = TimeUnit.SECONDS, batchSize = 1)
 @Measurement(iterations = 2, time = 1)
 @OutputTimeUnit(TimeUnit.MICROSECONDS)
 @Fork(value = 2)
@@ -35,6 +37,14 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 @State(Scope.Benchmark)
 @OperationsPerInvocation
 public class StringAppendJmhTest {
+    @Setup
+    public void setup() {
+    }
+
+    @TearDown
+    public void tearDown() {
+    }
+
     @Test
     public void runBenchmarks() throws RunnerException {
         Options options = new OptionsBuilder()

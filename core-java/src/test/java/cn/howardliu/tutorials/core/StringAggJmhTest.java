@@ -45,7 +45,6 @@ public class StringAggJmhTest {
                 .resultFormat(ResultFormatType.JSON)
                 .build();
 
-
         new Runner(options).run();
     }
 
