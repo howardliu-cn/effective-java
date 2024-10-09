@@ -18,6 +18,7 @@
         <module>java-features/java-21-features</module>
         <module>java-features/java-22-futures</module>
         <module>core-java</module>
+        <module>openfeign-tutorials</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -25,19 +26,27 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <junit.version>5.11.0</junit.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.7.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>${junit.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
             <dependency>
                 <groupId>commons-validator</groupId>
                 <artifactId>commons-validator</artifactId>
