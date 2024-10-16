@@ -19,6 +19,7 @@
         <module>java-features/java-22-futures</module>
         <module>core-java</module>
         <module>openfeign-tutorials</module>
+        <module>bloom-filter</module>
     </modules>
 
     <packaging>pom</packaging>
