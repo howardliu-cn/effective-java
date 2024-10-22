@@ -3,6 +3,8 @@ package cn.howardliu.tutorials.core.reflect;
 import java.beans.BeanInfo;
 import java.beans.IntrospectionException;
 import java.beans.Introspector;
+import java.beans.MethodDescriptor;
+import java.beans.ParameterDescriptor;
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -18,6 +20,18 @@ public class IntrospectorDemo {
             throws IntrospectionException, InvocationTargetException, IllegalAccessException {
         final BeanInfo userBeanInfo = Introspector.getBeanInfo(User.class);
         final User user = new User();
+
+        for (MethodDescriptor methodDescriptor : userBeanInfo.getMethodDescriptors()) {
+            System.out.println("Method Name: " + methodDescriptor.getName());
+            final ParameterDescriptor[] parameterDescriptors = methodDescriptor.getParameterDescriptors();
+            if (parameterDescriptors == null) {
+                continue;
+            }
+            for (ParameterDescriptor parameterDescriptor : parameterDescriptors) {
+                System.out.println("Parameter Name: " + parameterDescriptor.getName());
+                System.out.println("Parameter DisplayName: " + parameterDescriptor.getDisplayName());
+            }
+        }
 
         // 遍历所有属性描述符
         for (PropertyDescriptor prop : userBeanInfo.getPropertyDescriptors()) {
@@ -41,8 +55,23 @@ public class IntrospectorDemo {
         }
         System.out.println(user);
 
+        System.out.println("========");
+
         final BeanInfo userBeanInfo2 = Introspector.getBeanInfo(UserNoSetter.class);
         final UserNoSetter user2 = new UserNoSetter();
+
+        for (MethodDescriptor methodDescriptor : userBeanInfo2.getMethodDescriptors()) {
+            System.out.println("Method Name: " + methodDescriptor.getName());
+            final ParameterDescriptor[] parameterDescriptors = methodDescriptor.getParameterDescriptors();
+            if (parameterDescriptors == null) {
+                continue;
+            }
+            for (ParameterDescriptor parameterDescriptor : parameterDescriptors) {
+                System.out.println("Parameter Name: " + parameterDescriptor.getName());
+                System.out.println("Parameter DisplayName: " + parameterDescriptor.getDisplayName());
+            }
+        }
+
         // 遍历所有属性描述符
         for (PropertyDescriptor prop : userBeanInfo2.getPropertyDescriptors()) {
             System.out.println("Property Name: " + prop.getName());
@@ -76,6 +105,11 @@ public class IntrospectorDemo {
 
         public void username(String username) {
             this.username = username;
+        }
+
+        public UserNoSetter setUsername(String username) {
+            this.username = username;
+            return this;
         }
 
         @Override
