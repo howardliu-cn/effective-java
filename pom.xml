@@ -20,6 +20,7 @@
         <module>core-java</module>
         <module>openfeign-tutorials</module>
         <module>bloom-filter</module>
+        <module>run-mapstruct</module>
     </modules>
 
     <packaging>pom</packaging>
