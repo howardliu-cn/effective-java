@@ -1,4 +1,4 @@
-package cn.howardliu.tutorials.mapstruct;
+package cn.howardliu.tutorials.mapstruct.qualified;
 
 import lombok.Data;
 

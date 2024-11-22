@@ -5,6 +5,10 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.Test;
 
+import cn.howardliu.tutorials.mapstruct.qualified.UserBodyImperialValuesDTO;
+import cn.howardliu.tutorials.mapstruct.qualified.UserBodyValues;
+import cn.howardliu.tutorials.mapstruct.qualified.UserBodyValuesMapper;
+
 /**
  * @author 看山 howarldiu.cn <a href="mailto:howardliu1988@163.com">Howard Liu</a>
  * Created on 2024-11-21

@@ -1,4 +1,4 @@
-package cn.howardliu.tutorials.mapstruct;
+package cn.howardliu.tutorials.mapstruct.qualified;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
