@@ -58,9 +58,9 @@
                         </path>
                     </annotationProcessorPaths>
                     <compilerArgs>
-                        <compilerArg>
-                            -Amapstruct.unmappedTargetPolicy=IGNORE
-                        </compilerArg>
+<!--                        <compilerArg>-->
+<!--                            -Amapstruct.unmappedTargetPolicy=IGNORE-->
+<!--                        </compilerArg>-->
                     </compilerArgs>
                 </configuration>
             </plugin>
