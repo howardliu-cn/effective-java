@@ -9,9 +9,10 @@ import java.util.concurrent.ForkJoinPool;
  */
 public class FactorialSquareCalculatorMain {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        ForkJoinPool forkJoinPool = new ForkJoinPool();
-        FactorialSquareCalculator calculator = new FactorialSquareCalculator(10);
-        forkJoinPool.execute(calculator);
-        System.out.println("计算结果：" + calculator.join());
+        try (ForkJoinPool forkJoinPool = new ForkJoinPool()) {
+            FactorialSquareCalculator calculator = new FactorialSquareCalculator(10);
+            forkJoinPool.execute(calculator);
+            System.out.println("计算结果：" + calculator.join());
+        }
     }
 }
