@@ -1,6 +1,7 @@
 package cn.howardliu.tutorials.core.pattern;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.regex.Matcher;
@@ -133,9 +134,163 @@ public class PatternTest {
 
     @Test
     public void givenSetWithSubtraction_whenMatchesAccurately_thenCorrect() {
-int matches = runTest("[0-9&&[^2468]]", "123456789");
+        int matches = runTest("[0-9&&[^2468]]", "123456789");
 
-assertEquals(matches, 5);
+        assertEquals(matches, 5);
+    }
+
+    @Test
+    public void givenDigits_whenMatches_thenCorrect() {
+        int matches = runTest("\\d", "123");
+
+        assertEquals(matches, 3);
+    }
+
+    @Test
+    public void givenNonDigits_whenMatches_thenCorrect() {
+        int matches = runTest("\\D", "a6c");
+
+        assertEquals(matches, 2);
+    }
+
+    @Test
+    public void givenWhiteSpace_whenMatches_thenCorrect() {
+        int matches = runTest("\\s", "a c");
+
+        assertEquals(matches, 1);
+    }
+
+    @Test
+    public void givenNonWhiteSpace_whenMatches_thenCorrect() {
+        int matches = runTest("\\S", "a c");
+
+        assertEquals(matches, 2);
+    }
+
+    @Test
+    public void givenWordCharacter_whenMatches_thenCorrect() {
+        int matches = runTest("\\w", "hi!");
+
+        assertEquals(matches, 2);
+    }
+
+    @Test
+    public void givenNonWordCharacter_whenMatches_thenCorrect() {
+        int matches = runTest("\\W", "hi!");
+
+        assertEquals(matches, 1);
+    }
+
+    @Test
+    public void givenZeroOrOneQuantifier_whenMatches_thenCorrect() {
+        int matches = runTest("\\a?", "hi");
+
+        assertEquals(matches, 3);
+    }
+
+    @Test
+    public void givenZeroOrOneQuantifier_whenMatches_thenCorrect2() {
+        int matches = runTest("\\a{0,1}", "hi");
+
+        assertEquals(matches, 3);
+    }
+
+    @Test
+    public void givenZeroOrManyQuantifier_whenMatches_thenCorrect() {
+        int matches = runTest("\\a*", "hi");
+
+        assertEquals(matches, 3);
+    }
+
+    @Test
+    public void givenZeroOrManyQuantifier_whenMatches_thenCorrect2() {
+        int matches = runTest("\\a{0,}", "hi");
+
+        assertEquals(matches, 3);
+    }
+
+    @Test
+    public void givenOneOrManyQuantifier_whenMatches_thenCorrect() {
+        int matches = runTest("\\a+", "hi");
+
+        assertEquals(matches, 0);
+    }
+
+    @Test
+    public void givenOneOrManyQuantifier_whenMatches_thenCorrect2() {
+        int matches = runTest("\\a{1,}", "hi");
+
+        assertEquals(matches, 0);
+    }
+
+    @Test
+    public void givenBraceQuantifier_whenMatches_thenCorrect() {
+        int matches = runTest("a{3}", "aaaaaa");
+
+        assertEquals(matches, 2);
+    }
+
+    @Test
+    public void givenBraceQuantifier_whenFailsToMatch_thenCorrect() {
+        int matches = runTest("a{3}", "aa");
+
+        assertFalse(matches > 0);
+    }
+
+    @Test
+    public void givenBraceQuantifierWithRange_whenMatches_thenCorrect() {
+        int matches = runTest("a{2,3}", "aaaa");
+
+        assertEquals(matches, 1);
+    }
+
+    @Test
+    public void givenBraceQuantifierWithRange_whenMatchesLazily_thenCorrect() {
+        int matches = runTest("a{2,3}?", "aaaa");
+
+        assertEquals(matches, 2);
+    }
+
+    @Test
+    public void givenCapturingGroup_whenMatches_thenCorrect() {
+        int matches = runTest("(\\d\\d)", "12");
+
+        assertEquals(matches, 1);
+    }
+
+    @Test
+    public void givenCapturingGroup_whenMatches_thenCorrect2() {
+        int matches = runTest("(\\d\\d)", "1212");
+
+        assertEquals(matches, 2);
+    }
+
+    @Test
+    public void givenCapturingGroup_whenMatchesWithBackReference_thenCorrect() {
+        int matches = runTest("(\\d\\d)\\1", "1212");
+
+        assertEquals(matches, 1);
+    }
+
+    @Test
+    public void givenCapturingGroup_whenMatches_thenCorrect3() {
+        int matches = runTest("(\\d\\d)(\\d\\d)", "1212");
+
+        assertEquals(matches, 1);
+    }
+
+    @Test
+    public void givenCapturingGroup_whenMatchesWithBackReference_thenCorrect2() {
+        int matches = runTest("(\\d\\d)\\1\\1\\1", "12121212");
+
+        assertEquals(matches, 1);
+    }
+
+    @Test
+    public void givenCapturingGroupAndWrongInput_whenMatchFailsWithBackReference_thenCorrect() {
+        int matches = runTest("(\\d\\d)\\1", "1213");
+
+        assertFalse(matches > 0);
     }
 
     public static int runTest(String regex, String text) {
